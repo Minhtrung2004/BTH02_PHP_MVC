@@ -1,4 +1,6 @@
-
+<?php
+require './core/Connection.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
