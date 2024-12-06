@@ -95,7 +95,7 @@
                                     <a href="#" class="dropdown-item">Dropdown 4</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                            <a href="./views/home/contact.php" class="nav-item nav-link">Contact Us</a>
                         </div>
                         <div class="d-flex flex-nowrap border-top pt-3 pt-xl-0">
                             <div class="d-flex">
