@@ -1,19 +1,26 @@
 <?php
-function connectionDatabase($severname, $username, $password, $dbname)
+function connectionDatabase($servername, $username, $password, $dbname)
 {
     try {
-        $conn = new PDO("mysql:host=$severname; dbname = $dbname", $username . $password);
+        // Chuỗi kết nối chính xác
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+
+        // Thiết lập chế độ báo lỗi
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $conn;
     } catch (PDOException $e) {
-        die("NULL" . $e->getMessage());
+        // Thông báo lỗi chi tiết
+        echo "Connection failed: " . $e->getMessage();
+        return null; // Trả về null nếu không kết nối được
     }
 }
 
-$severname = "localhost";
+$servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "";
+$password = "root";
+$dbname = "tintuc";
+
 
 $conn = connectionDatabase($severname, $username, $password, $dbname);
 $conn = null;
+?>
