@@ -1,5 +1,9 @@
 <?php
 require './core/Connection.php';
+$sql = "SELECT * FROM news";
+$stmt = $conn->prepare($sql);
+$stmt->execute();
+$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -89,14 +93,14 @@ require './core/Connection.php';
                         <div class="navbar-nav mx-auto border-top">
                             <a href="./index.php" class="nav-item nav-link active">Home</a>
                             <a href="./views/home/detail.php" class="nav-item nav-link">Detail Page</a>
-                            <a href="404.html" class="nav-item nav-link">404 Page</a>
+                            <a href="" class="nav-item nav-link">World</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sports</a>
                                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="#" class="dropdown-item">Dropdown 1</a>
-                                    <a href="#" class="dropdown-item">Dropdown 2</a>
-                                    <a href="#" class="dropdown-item">Dropdown 3</a>
-                                    <a href="#" class="dropdown-item">Dropdown 4</a>
+                                    <a href="#" class="dropdown-item">Football</a>
+                                    <a href="#" class="dropdown-item">Boxing</a>
+                                    <a href="#" class="dropdown-item">Tennis</a>
+                                    <a href="#" class="dropdown-item">Golf</a>
                                 </div>
                             </div>
                             <a href="./views/home/contact.php" class="nav-item nav-link">Contact Us</a>
