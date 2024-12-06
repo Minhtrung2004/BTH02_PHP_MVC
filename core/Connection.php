@@ -1,4 +1,4 @@
-git <?php
+<?php
 function connectionDatabase($severname, $username, $password, $dbname)
 {
     try {
@@ -17,4 +17,3 @@ $dbname = "";
 
 $conn = connectionDatabase($severname, $username, $password, $dbname);
 $conn = null;
-?>
