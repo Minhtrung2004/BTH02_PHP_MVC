@@ -1,3 +1,4 @@
+
 <?php
 function connectionDatabase($servername, $username, $password, $dbname)
 {
