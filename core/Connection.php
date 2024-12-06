@@ -1,4 +1,5 @@
-git <?php
+
+<?php
 function connectionDatabase($severname, $username, $password, $dbname)
 {
     try {
