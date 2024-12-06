@@ -44,7 +44,7 @@
                         </div>
                         <div class="overflow-hidden" style="width: 735px;">
                             <div id="note" class="ps-2">
-                                <img src="../../img/features-fashion.jpg" class="img-fluid rounded-circle border border-3 border-primary me-2" style="width: 30px; height: 30px;" alt="">
+                                <img src="../../public/img/features-fashion.jpg" class="img-fluid rounded-circle border border-3 border-primary me-2" style="width: 30px; height: 30px;" alt="">
                                 <a href="#">
                                     <p class="text-white mb-0 link-hover">Newsan unknown printer took a galley of type andscrambled Newsan.</p>
                                 </a>
@@ -70,7 +70,7 @@
         <div class="container-fluid bg-light">
             <div class="container px-0">
                 <nav class="navbar navbar-light navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand mt-3">
+                    <a href="../../index.php" class="navbar-brand mt-3">
                         <p class="text-primary display-6 mb-2" style="line-height: 0;">Newsers</p>
                         <small class="text-body fw-normal" style="letter-spacing: 12px;">Nespaper</small>
                     </a>
@@ -79,7 +79,7 @@
                     </button>
                     <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
                         <div class="navbar-nav mx-auto border-top">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="../../index.php" class="nav-item nav-link">Home</a>
                             <a href="detail-page.html" class="nav-item nav-link active">Detail Page</a>
                             <a href="404.html" class="nav-item nav-link">404 Page</a>
                             <div class="nav-item dropdown">
@@ -91,11 +91,11 @@
                                     <a href="#" class="dropdown-item">Dropdown 4</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                            <a href="contact.php" class="nav-item nav-link">Contact Us</a>
                         </div>
                         <div class="d-flex flex-nowrap border-top pt-3 pt-xl-0">
                             <div class="d-flex">
-                                <img src="../../img/weather-icon.png" class="img-fluid w-100 me-2" alt="">
+                                <img src="../../public/img/weather-icon.png" class="img-fluid w-100 me-2" alt="">
                                 <div class="d-flex align-items-center">
                                     <strong class="fs-4 text-secondary">31°C</strong>
                                     <div class="d-flex flex-column ms-2" style="width: 150px;">
@@ -148,7 +148,7 @@
                         <a href="#" class="h1 display-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
                     </div>
                     <div class="position-relative rounded overflow-hidden mb-3">
-                        <img src="../../img/news-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                        <img src="../../public/img/news-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
                         <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">
                             Busimess
                         </div>
@@ -173,12 +173,12 @@
                     <div class="row g-4">
                         <div class="col-6">
                             <div class="rounded overflow-hidden">
-                                <img src="../../img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                <img src="../../public/img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="rounded overflow-hidden">
-                                <img src="../../img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                <img src="../../public/img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
                             </div>
                         </div>
                     </div>
@@ -237,7 +237,7 @@
                             <div id="tab-1" class="tab-pane fade show active">
                                 <div class="row g-4 align-items-center">
                                     <div class="col-3">
-                                        <img src="../../img/footer-4.jpg" class="img-fluid w-100 rounded" alt="">
+                                        <img src="../../public/img/footer-4.jpg" class="img-fluid w-100 rounded" alt="">
                                     </div>
                                     <div class="col-9">
                                         <h3>Amelia Alex</h3>
@@ -250,7 +250,7 @@
                             <div id="tab-2" class="tab-pane fade show">
                                 <div class="row g-4 align-items-center">
                                     <div class="col-3">
-                                        <img src="../../img/footer-5.jpg" class="img-fluid w-100 rounded" alt="">
+                                        <img src="../../public/img/footer-5.jpg" class="img-fluid w-100 rounded" alt="">
                                     </div>
                                     <div class="col-9">
                                         <h3>Amelia Alex</h3>
@@ -263,7 +263,7 @@
                             <div id="tab-3" class="tab-pane fade show">
                                 <div class="row g-4 align-items-center">
                                     <div class="col-3">
-                                        <img src="../../img/footer-6.jpg" class="img-fluid w-100 rounded" alt="">
+                                        <img src="../../public/img/footer-6.jpg" class="img-fluid w-100 rounded" alt="">
                                     </div>
                                     <div class="col-9">
                                         <h3>Amelia Alex</h3>
@@ -280,7 +280,7 @@
                         <div class="row g-4">
                             <div class="col-lg-6">
                                 <div class="d-flex align-items-center p-3 bg-white rounded">
-                                    <img src="../../img/chatGPT.jpg" class="img-fluid rounded" alt="">
+                                    <img src="../../public/img/chatGPT.jpg" class="img-fluid rounded" alt="">
                                     <div class="ms-3">
                                         <a href="#" class="h5 mb-2">Lorem Ipsum is simply dummy text of the printing</a>
                                         <p class="text-dark mt-3 mb-0 me-3"><i class="fa fa-clock"></i> 06 minute read</p>
@@ -289,7 +289,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="d-flex align-items-center p-3 bg-white rounded">
-                                    <img src="../../img/chatGPT-1.jpg" class="img-fluid rounded" alt="">
+                                    <img src="../../public/img/chatGPT-1.jpg" class="img-fluid rounded" alt="">
                                     <div class="ms-3">
                                         <a href="#" class="h5 mb-2">Lorem Ipsum is simply dummy text of the printing</a>
                                         <p class="text-dark mt-3 mb-0 me-3"><i class="fa fa-clock"></i> 06 minute read</p>
@@ -303,7 +303,7 @@
                         <div class="p-4 bg-white rounded mb-4">
                             <div class="row g-4">
                                 <div class="col-3">
-                                    <img src="../../img/footer-4.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                    <img src="../../public/img/footer-4.jpg" class="img-fluid rounded-circle w-100" alt="">
                                 </div>
                                 <div class="col-9">
                                     <div class="d-flex justify-content-between">
@@ -319,7 +319,7 @@
                         <div class="p-4 bg-white rounded mb-0">
                             <div class="row g-4">
                                 <div class="col-3">
-                                    <img src="../../img/footer-4.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                    <img src="../../public/img/footer-4.jpg" class="img-fluid rounded-circle w-100" alt="">
                                 </div>
                                 <div class="col-9">
                                     <div class="d-flex justify-content-between">
@@ -430,7 +430,7 @@
                                             <div class="col-4">
                                                 <div class="rounded-circle position-relative">
                                                     <div class="overflow-hidden rounded-circle">
-                                                        <img src="../../img/features-sports-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                        <img src="../../public/img/features-sports-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
                                                     </div>
                                                     <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
                                                 </div>
@@ -451,7 +451,7 @@
                                             <div class="col-4">
                                                 <div class="rounded-circle position-relative">
                                                     <div class="overflow-hidden rounded-circle">
-                                                        <img src="../../img/features-technology.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                        <img src="../../public/img/features-technology.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
                                                     </div>
                                                     <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
                                                 </div>
@@ -472,7 +472,7 @@
                                             <div class="col-4">
                                                 <div class="rounded-circle position-relative">
                                                     <div class="overflow-hidden rounded-circle">
-                                                        <img src="../../img/features-fashion.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                        <img src="../../public/img/features-fashion.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
                                                     </div>
                                                     <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
                                                 </div>
@@ -493,7 +493,7 @@
                                             <div class="col-4">
                                                 <div class="rounded-circle position-relative">
                                                     <div class="overflow-hidden rounded-circle">
-                                                        <img src="../../img/features-life-style.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                        <img src="../../public/img/features-life-style.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
                                                     </div>
                                                     <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
                                                 </div>
@@ -561,7 +561,7 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="position-relative banner-2">
-                                            <img src="../../img/banner-2.jpg" class="img-fluid w-100 rounded" alt="">
+                                            <img src="../../public/img/banner-2.jpg" class="img-fluid w-100 rounded" alt="">
                                             <div class="text-center banner-content-2">
                                                 <h6 class="mb-2">The Most Populer</h6>
                                                 <p class="text-white mb-2">News & Magazine WP Theme</p>
@@ -621,7 +621,7 @@
                             <a href="#">
                                 <div class="d-flex align-items-center">
                                     <div class="rounded-circle border border-2 border-primary overflow-hidden">
-                                        <img src="../../img/footer-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                        <img src="../../public/img/footer-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
                                     </div>
                                     <div class="d-flex flex-column ps-4">
                                         <p class="text-uppercase text-white mb-3">Life Style</p>
@@ -637,7 +637,7 @@
                             <a href="#">
                                 <div class="d-flex align-items-center">
                                     <div class="rounded-circle border border-2 border-primary overflow-hidden">
-                                        <img src="../../img/footer-2.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                        <img src="../../public/img/footer-2.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
                                     </div>
                                     <div class="d-flex flex-column ps-4">
                                         <p class="text-uppercase text-white mb-3">Sports</p>
@@ -668,32 +668,32 @@
                         <div class="row g-2">
                             <div class="col-4">
                                 <div class="rounded overflow-hidden">
-                                    <img src="../../img/footer-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    <img src="../../public/img/footer-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="rounded overflow-hidden">
-                                    <img src="../../img/footer-2.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    <img src="../../public/img/footer-2.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="rounded overflow-hidden">
-                                    <img src="../../img/footer-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    <img src="../../public/img/footer-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="rounded overflow-hidden">
-                                    <img src="../../img/footer-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    <img src="../../public/img/footer-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="rounded overflow-hidden">
-                                    <img src="../../img/footer-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    <img src="../../public/img/footer-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="rounded overflow-hidden">
-                                    <img src="../../img/footer-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    <img src="../../public/img/footer-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
                                 </div>
                             </div>
                         </div>
