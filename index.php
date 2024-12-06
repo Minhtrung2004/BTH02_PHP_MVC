@@ -204,7 +204,7 @@
 
                                     <img src="./public/img/features-fashion.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
 
-                                    <img src="img/features-fashion.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+
 
                                 </div>
                                 <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
@@ -444,7 +444,7 @@
 
                             <img src="./public/img/news-7.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
 
-                            <img src="img/news-7.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+
 
                         </div>
                         <div class="d-flex flex-column p-4">
@@ -462,7 +462,7 @@
 
                             <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
 
-                            <img src="img/news-6.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+
 
                         </div>
                         <div class="d-flex flex-column p-4">
@@ -480,7 +480,7 @@
 
                             <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
 
-                            <img src="img/news-3.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+
 
                         </div>
                         <div class="d-flex flex-column p-4">
@@ -498,7 +498,7 @@
 
                             <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
 
-                            <img src="img/news-4.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+
 
                         </div>
                         <div class="d-flex flex-column p-4">
@@ -603,7 +603,7 @@
 
                                                             <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -623,7 +623,7 @@
 
                                                             <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -643,7 +643,7 @@
 
                                                             <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -663,7 +663,7 @@
 
                                                             <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -734,7 +734,7 @@
 
                                                             <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -754,7 +754,7 @@
 
                                                             <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -774,7 +774,7 @@
 
                                                             <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -794,7 +794,7 @@
 
                                                             <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -865,7 +865,7 @@
 
                                                             <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -885,7 +885,7 @@
 
                                                             <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -905,7 +905,7 @@
 
                                                             <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -925,7 +925,7 @@
 
                                                             <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -996,7 +996,7 @@
 
                                                             <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -1016,7 +1016,7 @@
 
                                                             <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -1036,7 +1036,7 @@
 
                                                             <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -1056,7 +1056,7 @@
 
                                                             <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -1127,7 +1127,7 @@
 
                                                             <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -1147,7 +1147,7 @@
 
                                                             <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -1167,7 +1167,7 @@
 
                                                             <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -1187,7 +1187,7 @@
 
                                                             <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                                            <img src="img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                                         </div>
                                                     </div>
@@ -1235,7 +1235,7 @@
 
                                         <img src="./public/img/news-7.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
 
-                                        <img src="img/news-7.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+
 
                                     </div>
                                     <div class="d-flex flex-column p-4">
@@ -1253,7 +1253,7 @@
 
                                         <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
 
-                                        <img src="img/news-6.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+
 
                                     </div>
                                     <div class="d-flex flex-column p-4">
@@ -1271,7 +1271,7 @@
 
                                         <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
 
-                                        <img src="img/news-3.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+
 
                                     </div>
                                     <div class="d-flex flex-column p-4">
@@ -1289,7 +1289,7 @@
 
                                         <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
 
-                                        <img src="img/news-4.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+
 
                                     </div>
                                     <div class="d-flex flex-column p-4">
@@ -1402,7 +1402,7 @@
 
                                                             <img src="./public/img/features-sports-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
 
-                                                            <img src="img/features-sports-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+
 
                                                         </div>
                                                         <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
@@ -1427,7 +1427,7 @@
 
                                                             <img src="./public/img/features-technology.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
 
-                                                            <img src="img/features-technology.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+
 
                                                         </div>
                                                         <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
@@ -1452,7 +1452,7 @@
 
                                                             <img src="./public/img/features-fashion.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
 
-                                                            <img src="img/features-fashion.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+
 
                                                         </div>
                                                         <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
@@ -1477,7 +1477,6 @@
 
                                                             <img src="./public/img/features-life-style.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
 
-                                                            <img src="img/features-life-style.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
 
                                                         </div>
                                                         <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
