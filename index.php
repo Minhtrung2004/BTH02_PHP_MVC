@@ -1,5 +1,5 @@
 <?php
-require 'db_connection.php';
+// require 'db_connection.php';
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +15,9 @@ require 'db_connection.php';
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@100;600;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@100;600;800&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
@@ -49,18 +51,24 @@ require 'db_connection.php';
                         </div>
                         <div class="overflow-hidden" style="width: 735px;">
                             <div id="note" class="ps-2">
-                                <img src="./public/img/features-fashion.jpg" class="img-fluid rounded-circle border border-3 border-primary me-2" style="width: 30px; height: 30px;" alt="">
+                                <img src="./public/img/features-fashion.jpg"
+                                    class="img-fluid rounded-circle border border-3 border-primary me-2"
+                                    style="width: 30px; height: 30px;" alt="">
 
-                                <img src="./public/img/features-sports-1.jpg" class="img-fluid rounded-circle border border-3 border-primary me-2" style="width: 30px; height: 30px;" alt="">
+                                <img src="./public/img/features-sports-1.jpg"
+                                    class="img-fluid rounded-circle border border-3 border-primary me-2"
+                                    style="width: 30px; height: 30px;" alt="">
 
                                 <a href="#">
-                                    <p class="text-white mb-0 link-hover">Newsan unknown printer took a galley of type andscrambled Newsan.</p>
+                                    <p class="text-white mb-0 link-hover">Newsan unknown printer took a galley of type
+                                        andscrambled Newsan.</p>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="top-link flex-lg-wrap">
-                        <i class="fas fa-calendar-alt text-white border-end border-secondary pe-2 me-2"> <span class="text-body">Tuesday, Sep 12, 2024</span></i>
+                        <i class="fas fa-calendar-alt text-white border-end border-secondary pe-2 me-2"> <span
+                                class="text-body">Tuesday, Sep 12, 2024</span></i>
                         <div class="d-flex icon">
                             <p class="mb-0 text-white me-2">Follow Us:</p>
                             <a href="" class="me-2"><i class="fab fa-facebook-f text-body link-hover"></i></a>
@@ -82,7 +90,8 @@ require 'db_connection.php';
                         <p class="text-primary display-6 mb-2" style="line-height: 0;">Newsers</p>
                         <small class="text-body fw-normal" style="letter-spacing: 12px;">Nespaper</small>
                     </a>
-                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
@@ -116,7 +125,10 @@ require 'db_connection.php';
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn-search btn border border-primary btn-md-square rounded-circle bg-white my-auto" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                            <button
+                                class="btn-search btn border border-primary btn-md-square rounded-circle bg-white my-auto"
+                                data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                                    class="fas fa-search text-primary"></i></button>
                         </div>
                     </div>
                 </nav>
@@ -136,7 +148,8 @@ require 'db_connection.php';
                 </div>
                 <div class="modal-body d-flex align-items-center">
                     <div class="input-group w-75 mx-auto d-flex">
-                        <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
                         <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
                     </div>
                 </div>
@@ -156,12 +169,16 @@ require 'db_connection.php';
                             <div class="rounded-circle position-relative">
                                 <div class="overflow-hidden rounded-circle">
 
-                                    <img src="./public/img/features-sports-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                    <img src="./public/img/features-sports-1.jpg"
+                                        class="img-zoomin img-fluid rounded-circle w-100" alt="">
 
-                                    <img src="img/features-sports-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                    <img src="img/features-sports-1.jpg"
+                                        class="img-zoomin img-fluid rounded-circle w-100" alt="">
 
                                 </div>
-                                <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                <span
+                                    class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
+                                    style="top: 10%; right: -10px;">3</span>
                             </div>
                         </div>
                         <div class="col-8">
@@ -170,7 +187,8 @@ require 'db_connection.php';
                                 <a href="#" class="h6">
                                     Get the best speak market, news.
                                 </a>
-                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9,
+                                    2024</small>
                             </div>
                         </div>
                     </div>
@@ -181,12 +199,15 @@ require 'db_connection.php';
                             <div class="rounded-circle position-relative">
                                 <div class="overflow-hidden rounded-circle">
 
-                                    <img src="./public/img/features-technology.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                    <img src="./public/img/features-technology.jpg"
+                                        class="img-zoomin img-fluid rounded-circle w-100" alt="">
 
 
 
                                 </div>
-                                <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                <span
+                                    class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
+                                    style="top: 10%; right: -10px;">3</span>
                             </div>
                         </div>
                         <div class="col-8">
@@ -195,7 +216,8 @@ require 'db_connection.php';
                                 <a href="#" class="h6">
                                     Get the best speak market, news.
                                 </a>
-                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9,
+                                    2024</small>
                             </div>
                         </div>
                     </div>
@@ -206,12 +228,15 @@ require 'db_connection.php';
                             <div class="rounded-circle position-relative">
                                 <div class="overflow-hidden rounded-circle">
 
-                                    <img src="./public/img/features-fashion.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                    <img src="./public/img/features-fashion.jpg"
+                                        class="img-zoomin img-fluid rounded-circle w-100" alt="">
 
 
 
                                 </div>
-                                <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                <span
+                                    class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
+                                    style="top: 10%; right: -10px;">3</span>
                             </div>
                         </div>
                         <div class="col-8">
@@ -220,7 +245,8 @@ require 'db_connection.php';
                                 <a href="#" class="h6">
                                     Get the best speak market, news.
                                 </a>
-                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9,
+                                    2024</small>
                             </div>
                         </div>
                     </div>
@@ -230,9 +256,12 @@ require 'db_connection.php';
                         <div class="col-4">
                             <div class="rounded-circle position-relative">
                                 <div class="overflow-hidden rounded-circle">
-                                    <img src="./public/img/features-life-style.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                    <img src="./public/img/features-life-style.jpg"
+                                        class="img-zoomin img-fluid rounded-circle w-100" alt="">
                                 </div>
-                                <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                <span
+                                    class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
+                                    style="top: 10%; right: -10px;">3</span>
                             </div>
                         </div>
                         <div class="col-8">
@@ -241,7 +270,8 @@ require 'db_connection.php';
                                 <a href="#" class="h6">
                                     Get the best speak market, news.
                                 </a>
-                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9,
+                                    2024</small>
                             </div>
                         </div>
                     </div>
@@ -259,17 +289,24 @@ require 'db_connection.php';
                 <div class="col-lg-7 col-xl-8 mt-0">
                     <div class="position-relative overflow-hidden rounded">
                         <img src="./public/img/news-1.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
-                        <div class="d-flex justify-content-center px-4 position-absolute flex-wrap" style="bottom: 10px; left: 0;">
-                            <a href="#" class="text-white me-3 link-hover"><i class="fa fa-clock"></i> 06 minute read</a>
+                        <div class="d-flex justify-content-center px-4 position-absolute flex-wrap"
+                            style="bottom: 10px; left: 0;">
+                            <a href="#" class="text-white me-3 link-hover"><i class="fa fa-clock"></i> 06 minute
+                                read</a>
                             <a href="#" class="text-white me-3 link-hover"><i class="fa fa-eye"></i> 3.5k Views</a>
-                            <a href="#" class="text-white me-3 link-hover"><i class="fa fa-comment-dots"></i> 05 Comment</a>
+                            <a href="#" class="text-white me-3 link-hover"><i class="fa fa-comment-dots"></i> 05
+                                Comment</a>
                             <a href="#" class="text-white link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
                         </div>
                     </div>
                     <div class="border-bottom py-3">
-                        <a href="#" class="display-4 text-dark mb-0 link-hover">Lorem Ipsum is simply dummy text of the printing</a>
+                        <a href="#" class="display-4 text-dark mb-0 link-hover">Lorem Ipsum is simply dummy text of the
+                            printing</a>
                     </div>
-                    <p class="mt-3 mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley standard dummy text ever since the 1500s, when an unknown printer took a galley...
+                    <p class="mt-3 mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley...
                     </p>
                     <div class="bg-light p-4 rounded">
                         <div class="news-2">
@@ -278,13 +315,15 @@ require 'db_connection.php';
                         <div class="row g-4 align-items-center">
                             <div class="col-md-6">
                                 <div class="rounded overflow-hidden">
-                                    <img src="./public/img/news-2.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+                                    <img src="./public/img/news-2.jpg" class="img-fluid rounded img-zoomin w-100"
+                                        alt="">
 
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="d-flex flex-column">
-                                    <a href="#" class="h3">Stoneman Clandestine Ukrainian claims successes against Russian.</a>
+                                    <a href="#" class="h3">Stoneman Clandestine Ukrainian claims successes against
+                                        Russian.</a>
                                     <p class="mb-0 fs-5"><i class="fa fa-clock"> 06 minute read</i> </p>
                                     <p class="mb-0 fs-5"><i class="fa fa-eye"> 3.5k Views</i></p>
                                 </div>
@@ -297,7 +336,8 @@ require 'db_connection.php';
                         <div class="row g-4">
                             <div class="col-12">
                                 <div class="rounded overflow-hidden">
-                                    <img src="./public/img/news-3.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+                                    <img src="./public/img/news-3.jpg" class="img-fluid rounded img-zoomin w-100"
+                                        alt="">
                                 </div>
                             </div>
                             <div class="col-12">
@@ -311,7 +351,8 @@ require 'db_connection.php';
                                 <div class="row g-4 align-items-center">
                                     <div class="col-5">
                                         <div class="overflow-hidden rounded">
-                                            <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            <img src="./public/img/news-3.jpg"
+                                                class="img-zoomin img-fluid rounded w-100" alt="">
                                         </div>
                                     </div>
                                     <div class="col-7">
@@ -327,7 +368,8 @@ require 'db_connection.php';
                                 <div class="row g-4 align-items-center">
                                     <div class="col-5">
                                         <div class="overflow-hidden rounded">
-                                            <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            <img src="./public/img/news-4.jpg"
+                                                class="img-zoomin img-fluid rounded w-100" alt="">
                                         </div>
                                     </div>
                                     <div class="col-7">
@@ -343,7 +385,8 @@ require 'db_connection.php';
                                 <div class="row g-4 align-items-center">
                                     <div class="col-5">
                                         <div class="overflow-hidden rounded">
-                                            <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            <img src="./public/img/news-5.jpg"
+                                                class="img-zoomin img-fluid rounded w-100" alt="">
                                         </div>
                                     </div>
                                     <div class="col-7">
@@ -359,7 +402,8 @@ require 'db_connection.php';
                                 <div class="row g-4 align-items-center">
                                     <div class="col-5">
                                         <div class="overflow-hidden rounded">
-                                            <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            <img src="./public/img/news-6.jpg"
+                                                class="img-zoomin img-fluid rounded w-100" alt="">
                                         </div>
                                     </div>
                                     <div class="col-7">
@@ -375,7 +419,8 @@ require 'db_connection.php';
                                 <div class="row g-4 align-items-center">
                                     <div class="col-5">
                                         <div class="overflow-hidden rounded">
-                                            <img src="./public/img/news-7.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            <img src="./public/img/news-7.jpg"
+                                                class="img-zoomin img-fluid rounded w-100" alt="">
                                         </div>
                                     </div>
                                     <div class="col-7">
@@ -391,7 +436,8 @@ require 'db_connection.php';
                                 <div class="row g-4 align-items-center">
                                     <div class="col-5">
                                         <div class="overflow-hidden rounded">
-                                            <img src="./public/img/news-7.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            <img src="./public/img/news-7.jpg"
+                                                class="img-zoomin img-fluid rounded w-100" alt="">
                                         </div>
                                     </div>
                                     <div class="col-7">
@@ -413,17 +459,23 @@ require 'db_connection.php';
 
 
     <!-- Banner Start -->
-    <div class="container-fluid py-5 my-5" style="background: linear-gradient(rgba(202, 203, 185, 1), rgba(202, 203, 185, 1));">
+    <div class="container-fluid py-5 my-5"
+        style="background: linear-gradient(rgba(202, 203, 185, 1), rgba(202, 203, 185, 1));">
         <div class="container">
             <div class="row g-4 align-items-center">
                 <div class="col-lg-7">
                     <h1 class="mb-4 text-primary">Newsers</h1>
                     <h1 class="mb-4">Get Every Weekly Updates</h1>
-                    <p class="text-dark mb-4 pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    <p class="text-dark mb-4 pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley
                     </p>
                     <div class="position-relative mx-auto">
-                        <input class="form-control w-100 py-3 rounded-pill" type="email" placeholder="Your Busines Email">
-                        <button type="submit" class="btn btn-primary py-3 px-5 position-absolute rounded-pill text-white h-100" style="top: 0; right: 0;">Subscribe Now</button>
+                        <input class="form-control w-100 py-3 rounded-pill" type="email"
+                            placeholder="Your Busines Email">
+                        <button type="submit"
+                            class="btn btn-primary py-3 px-5 position-absolute rounded-pill text-white h-100"
+                            style="top: 0; right: 0;">Subscribe Now</button>
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -455,7 +507,8 @@ require 'db_connection.php';
                             <a href="#" class="h4">Lorem Ipsum is simply dummy text of...</a>
                             <div class="d-flex justify-content-between">
                                 <a href="#" class="small text-body link-hover">by Willum Skeem</a>
-                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                    2024</small>
                             </div>
                         </div>
                     </div>
@@ -473,7 +526,8 @@ require 'db_connection.php';
                             <a href="#" class="h4">Lorem Ipsum is simply dummy text of...</a>
                             <div class="d-flex justify-content-between">
                                 <a href="#" class="small text-body link-hover">by Willum Skeem</a>
-                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                    2024</small>
                             </div>
                         </div>
                     </div>
@@ -491,7 +545,8 @@ require 'db_connection.php';
                             <a href="#" class="h4">Lorem Ipsum is simply dummy text of...</a>
                             <div class="d-flex justify-content-between">
                                 <a href="#" class="small text-body link-hover">by Willum Skeem</a>
-                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                    2024</small>
                             </div>
                         </div>
                     </div>
@@ -509,7 +564,8 @@ require 'db_connection.php';
                             <a href="#" class="h4">Lorem Ipsum is simply dummy text of...</a>
                             <div class="d-flex justify-content-between">
                                 <a href="#" class="small text-body link-hover">by Willum Skeem</a>
-                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                    2024</small>
                             </div>
                         </div>
                     </div>
@@ -525,7 +581,8 @@ require 'db_connection.php';
                             <a href="#" class="h4 ">Lorem Ipsum is simply dummy text of...</a>
                             <div class="d-flex justify-content-between">
                                 <a href="#" class="small text-body link-hover">by Willum Skeem</a>
-                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                    2024</small>
                             </div>
                         </div>
                     </div>
@@ -546,27 +603,32 @@ require 'db_connection.php';
                             <h1 class="mb-4">What’s New</h1>
                             <ul class="nav nav-pills d-inline-flex text-center">
                                 <li class="nav-item mb-3">
-                                    <a class="d-flex py-2 bg-light rounded-pill active me-2" data-bs-toggle="pill" href="#tab-1">
+                                    <a class="d-flex py-2 bg-light rounded-pill active me-2" data-bs-toggle="pill"
+                                        href="#tab-1">
                                         <span class="text-dark" style="width: 100px;">Sports</span>
                                     </a>
                                 </li>
                                 <li class="nav-item mb-3">
-                                    <a class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill" href="#tab-2">
+                                    <a class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill"
+                                        href="#tab-2">
                                         <span class="text-dark" style="width: 100px;">Magazine</span>
                                     </a>
                                 </li>
                                 <li class="nav-item mb-3">
-                                    <a class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill" href="#tab-3">
+                                    <a class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill"
+                                        href="#tab-3">
                                         <span class="text-dark" style="width: 100px;">Politics</span>
                                     </a>
                                 </li>
                                 <li class="nav-item mb-3">
-                                    <a class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill" href="#tab-4">
+                                    <a class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill"
+                                        href="#tab-4">
                                         <span class="text-dark" style="width: 100px;">Technology</span>
                                     </a>
                                 </li>
                                 <li class="nav-item mb-3">
-                                    <a class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill" href="#tab-5">
+                                    <a class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill"
+                                        href="#tab-5">
                                         <span class="text-dark" style="width: 100px;">Fashion</span>
                                     </a>
                                 </li>
@@ -578,24 +640,33 @@ require 'db_connection.php';
                                     <div class="col-lg-8">
                                         <div class="position-relative rounded overflow-hidden">
 
-                                            <img src="./public/img/news-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            <img src="./public/img/news-1.jpg"
+                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
-                                            <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">
+                                            <div class="position-absolute text-white px-4 py-2 bg-primary rounded"
+                                                style="top: 20px; right: 20px;">
                                                 Sports
                                             </div>
                                         </div>
                                         <div class="my-4">
-                                            <a href="#" class="h4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                            <a href="#" class="h4">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry.</a>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
-                                            <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06
+                                                minute read</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k
+                                                Views</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i
+                                                    class="fa fa-comment-dots"></i> 05 Comment</a>
+                                            <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k
+                                                Share</a>
                                         </div>
-                                        <p class="my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has been the industry's standard dummy..
+                                        <p class="my-4">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has
+                                            been the industry's standard dummy..
                                         </p>
                                     </div>
                                     <div class="col-lg-4">
@@ -605,7 +676,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-3.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -615,7 +687,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Sports</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -625,7 +699,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-4.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -635,7 +710,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Sports</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -645,7 +722,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-5.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -655,7 +733,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Sports</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -665,7 +745,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-6.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -675,7 +756,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Sports</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -685,7 +768,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-7.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-7.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -695,7 +779,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Magazine</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -709,24 +795,33 @@ require 'db_connection.php';
                                     <div class="col-lg-8">
                                         <div class="position-relative rounded overflow-hidden">
 
-                                            <img src="./public/img/news-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            <img src="./public/img/news-1.jpg"
+                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
-                                            <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">
+                                            <div class="position-absolute text-white px-4 py-2 bg-primary rounded"
+                                                style="top: 20px; right: 20px;">
                                                 Magazine
                                             </div>
                                         </div>
                                         <div class="my-3">
-                                            <a href="#" class="h4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                            <a href="#" class="h4">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry.</a>
                                         </div>
-                                        <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has been the industry's standard dummy..
+                                        <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has
+                                            been the industry's standard dummy..
                                         </p>
                                         <div class="d-flex justify-content-between">
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
-                                            <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06
+                                                minute read</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k
+                                                Views</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i
+                                                    class="fa fa-comment-dots"></i> 05 Comment</a>
+                                            <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k
+                                                Share</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
@@ -736,7 +831,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-3.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -746,7 +842,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Magazine</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -756,7 +854,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-4.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -766,7 +865,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Magazine</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -776,7 +877,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-5.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -786,7 +888,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Magazine</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -796,7 +900,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-6.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -806,7 +911,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Magazine</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -816,7 +923,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-7.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-7.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -826,7 +934,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Magazine</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -840,24 +950,33 @@ require 'db_connection.php';
                                     <div class="col-lg-8">
                                         <div class="position-relative rounded overflow-hidden">
 
-                                            <img src="./public/img/news-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            <img src="./public/img/news-1.jpg"
+                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
-                                            <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">
+                                            <div class="position-absolute text-white px-4 py-2 bg-primary rounded"
+                                                style="top: 20px; right: 20px;">
                                                 Politics
                                             </div>
                                         </div>
                                         <div class="my-3">
-                                            <a href="#" class="h4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                            <a href="#" class="h4">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry.</a>
                                         </div>
-                                        <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has been the industry's standard dummy..
+                                        <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has
+                                            been the industry's standard dummy..
                                         </p>
                                         <div class="d-flex justify-content-between">
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
-                                            <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06
+                                                minute read</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k
+                                                Views</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i
+                                                    class="fa fa-comment-dots"></i> 05 Comment</a>
+                                            <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k
+                                                Share</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
@@ -867,7 +986,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-3.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -877,7 +997,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Politics</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -887,7 +1009,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-4.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -897,7 +1020,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Politics</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -907,7 +1032,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-5.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -917,7 +1043,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Politics</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -927,7 +1055,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-6.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -937,7 +1066,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Politics</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -947,7 +1078,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-7.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-7.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -957,7 +1089,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Politics</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -971,24 +1105,33 @@ require 'db_connection.php';
                                     <div class="col-lg-8">
                                         <div class="position-relative rounded overflow-hidden">
 
-                                            <img src="./public/img/news-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            <img src="./public/img/news-1.jpg"
+                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
-                                            <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">
+                                            <div class="position-absolute text-white px-4 py-2 bg-primary rounded"
+                                                style="top: 20px; right: 20px;">
                                                 Technology
                                             </div>
                                         </div>
                                         <div class="my-3">
-                                            <a href="#" class="h4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                            <a href="#" class="h4">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry.</a>
                                         </div>
-                                        <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has been the industry's standard dummy
+                                        <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has
+                                            been the industry's standard dummy
                                         </p>
                                         <div class="d-flex justify-content-between">
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
-                                            <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06
+                                                minute read</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k
+                                                Views</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i
+                                                    class="fa fa-comment-dots"></i> 05 Comment</a>
+                                            <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k
+                                                Share</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
@@ -998,7 +1141,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-3.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -1008,7 +1152,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Technology</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1018,7 +1164,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-4.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -1028,7 +1175,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Technology</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1038,7 +1187,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-5.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -1048,7 +1198,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Technology</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1058,7 +1210,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-6.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -1068,7 +1221,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Technology</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1078,7 +1233,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-7.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-7.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -1088,7 +1244,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Technology</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1102,24 +1260,33 @@ require 'db_connection.php';
                                     <div class="col-lg-8">
                                         <div class="position-relative rounded overflow-hidden">
 
-                                            <img src="./public/img/news-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            <img src="./public/img/news-1.jpg"
+                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
-                                            <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">
+                                            <div class="position-absolute text-white px-4 py-2 bg-primary rounded"
+                                                style="top: 20px; right: 20px;">
                                                 Fashion
                                             </div>
                                         </div>
                                         <div class="my-3">
-                                            <a href="#" class="h4">World Happiness Report 2023: What's the highway to happiness?</a>
+                                            <a href="#" class="h4">World Happiness Report 2023: What's the highway to
+                                                happiness?</a>
                                         </div>
-                                        <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has been the industry's standard dummy
+                                        <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has
+                                            been the industry's standard dummy
                                         </p>
                                         <div class="d-flex justify-content-between">
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
-                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
-                                            <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06
+                                                minute read</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k
+                                                Views</a>
+                                            <a href="#" class="text-dark link-hover me-3"><i
+                                                    class="fa fa-comment-dots"></i> 05 Comment</a>
+                                            <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k
+                                                Share</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
@@ -1129,7 +1296,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-3.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -1139,7 +1307,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Fashion</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1149,7 +1319,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-4.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -1159,7 +1330,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Fashion</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1169,7 +1342,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-5.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -1179,7 +1353,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Fashion</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1189,7 +1365,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-6.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -1199,7 +1376,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Fashion</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1209,7 +1388,8 @@ require 'db_connection.php';
                                                     <div class="col-5">
                                                         <div class="overflow-hidden rounded">
 
-                                                            <img src="./public/img/news-7.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            <img src="./public/img/news-7.jpg"
+                                                                class="img-zoomin img-fluid rounded w-100" alt="">
 
 
 
@@ -1219,7 +1399,9 @@ require 'db_connection.php';
                                                         <div class="features-content d-flex flex-column">
                                                             <p class="text-uppercase mb-2">Fashion</p>
                                                             <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            <small class="text-body d-block"><i
+                                                                    class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                                                2024</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1237,16 +1419,19 @@ require 'db_connection.php';
                                 <div class="bg-light rounded">
                                     <div class="rounded-top overflow-hidden">
 
-                                        <img src="./public/img/news-7.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                        <img src="./public/img/news-7.jpg"
+                                            class="img-zoomin img-fluid rounded-top w-100" alt="">
 
 
 
                                     </div>
                                     <div class="d-flex flex-column p-4">
-                                        <a href="#" class="h4">There are many variations of passages of Lorem Ipsum available,</a>
+                                        <a href="#" class="h4">There are many variations of passages of Lorem Ipsum
+                                            available,</a>
                                         <div class="d-flex justify-content-between">
                                             <a href="#" class="small text-body link-hover">by Willium Smith</a>
-                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i>
+                                                Dec 9, 2024</small>
                                         </div>
                                     </div>
                                 </div>
@@ -1255,16 +1440,19 @@ require 'db_connection.php';
                                 <div class="bg-light rounded">
                                     <div class="rounded-top overflow-hidden">
 
-                                        <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                        <img src="./public/img/news-6.jpg"
+                                            class="img-zoomin img-fluid rounded-top w-100" alt="">
 
 
 
                                     </div>
                                     <div class="d-flex flex-column p-4">
-                                        <a href="#" class="h4">There are many variations of passages of Lorem Ipsum available,</a>
+                                        <a href="#" class="h4">There are many variations of passages of Lorem Ipsum
+                                            available,</a>
                                         <div class="d-flex justify-content-between">
                                             <a href="#" class="small text-body link-hover">by Willium Smith</a>
-                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i>
+                                                Dec 9, 2024</small>
                                         </div>
                                     </div>
                                 </div>
@@ -1273,16 +1461,19 @@ require 'db_connection.php';
                                 <div class="bg-light rounded">
                                     <div class="rounded-top overflow-hidden">
 
-                                        <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                        <img src="./public/img/news-3.jpg"
+                                            class="img-zoomin img-fluid rounded-top w-100" alt="">
 
 
 
                                     </div>
                                     <div class="d-flex flex-column p-4">
-                                        <a href="#" class="h4">There are many variations of passages of Lorem Ipsum available,</a>
+                                        <a href="#" class="h4">There are many variations of passages of Lorem Ipsum
+                                            available,</a>
                                         <div class="d-flex justify-content-between">
                                             <a href="#" class="small text-body link-hover">by Willium Smith</a>
-                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i>
+                                                Dec 9, 2024</small>
                                         </div>
                                     </div>
                                 </div>
@@ -1291,16 +1482,19 @@ require 'db_connection.php';
                                 <div class="bg-light rounded">
                                     <div class="rounded-top overflow-hidden">
 
-                                        <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                        <img src="./public/img/news-4.jpg"
+                                            class="img-zoomin img-fluid rounded-top w-100" alt="">
 
 
 
                                     </div>
                                     <div class="d-flex flex-column p-4">
-                                        <a href="#" class="h4">There are many variations of passages of Lorem Ipsum available,</a>
+                                        <a href="#" class="h4">There are many variations of passages of Lorem Ipsum
+                                            available,</a>
                                         <div class="d-flex justify-content-between">
                                             <a href="#" class="small text-body link-hover">by Willium Smith</a>
-                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i>
+                                                Dec 9, 2024</small>
                                         </div>
                                     </div>
                                 </div>
@@ -1308,13 +1502,16 @@ require 'db_connection.php';
                             <div class="whats-item">
                                 <div class="bg-light rounded">
                                     <div class="rounded-top overflow-hidden">
-                                        <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                        <img src="./public/img/news-5.jpg"
+                                            class="img-zoomin img-fluid rounded-top w-100" alt="">
                                     </div>
                                     <div class="d-flex flex-column p-4">
-                                        <a href="#" class="h4">There are many variations of passages of Lorem Ipsum available,</a>
+                                        <a href="#" class="h4">There are many variations of passages of Lorem Ipsum
+                                            available,</a>
                                         <div class="d-flex justify-content-between">
                                             <a href="#" class="small text-body link-hover">by Willium Smith</a>
-                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i>
+                                                Dec 9, 2024</small>
                                         </div>
                                     </div>
                                 </div>
@@ -1333,10 +1530,12 @@ require 'db_connection.php';
 
                                         <div class="lifestyle-content">
                                             <div class="mt-auto">
-                                                <a href="#" class="h4 text-white link-hover">There are many variations of passages of Lorem Ipsum available,</a>
+                                                <a href="#" class="h4 text-white link-hover">There are many variations
+                                                    of passages of Lorem Ipsum available,</a>
                                                 <div class="d-flex justify-content-between mt-4">
                                                     <a href="#" class="small text-white link-hover">By Willium Smith</a>
-                                                    <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                    <small class="text-white d-block"><i
+                                                            class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -1351,10 +1550,12 @@ require 'db_connection.php';
 
                                         <div class="lifestyle-content">
                                             <div class="mt-auto">
-                                                <a href="#" class="h4 text-white link-hover">There are many variations of passages of Lorem Ipsum available,</a>
+                                                <a href="#" class="h4 text-white link-hover">There are many variations
+                                                    of passages of Lorem Ipsum available,</a>
                                                 <div class="d-flex justify-content-between mt-4">
                                                     <a href="#" class="small text-white link-hover">By Willium Smith</a>
-                                                    <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                    <small class="text-white d-block"><i
+                                                            class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -1370,28 +1571,39 @@ require 'db_connection.php';
                                     <h4 class="mb-4">Stay Connected</h4>
                                     <div class="row g-4">
                                         <div class="col-12">
-                                            <a href="#" class="w-100 rounded btn btn-primary d-flex align-items-center p-3 mb-2">
-                                                <i class="fab fa-facebook-f btn btn-light btn-square rounded-circle me-3"></i>
+                                            <a href="#"
+                                                class="w-100 rounded btn btn-primary d-flex align-items-center p-3 mb-2">
+                                                <i
+                                                    class="fab fa-facebook-f btn btn-light btn-square rounded-circle me-3"></i>
                                                 <span class="text-white">13,977 Fans</span>
                                             </a>
-                                            <a href="#" class="w-100 rounded btn btn-danger d-flex align-items-center p-3 mb-2">
-                                                <i class="fab fa-twitter btn btn-light btn-square rounded-circle me-3"></i>
+                                            <a href="#"
+                                                class="w-100 rounded btn btn-danger d-flex align-items-center p-3 mb-2">
+                                                <i
+                                                    class="fab fa-twitter btn btn-light btn-square rounded-circle me-3"></i>
                                                 <span class="text-white">21,798 Follower</span>
                                             </a>
-                                            <a href="#" class="w-100 rounded btn btn-warning d-flex align-items-center p-3 mb-2">
-                                                <i class="fab fa-youtube btn btn-light btn-square rounded-circle me-3"></i>
+                                            <a href="#"
+                                                class="w-100 rounded btn btn-warning d-flex align-items-center p-3 mb-2">
+                                                <i
+                                                    class="fab fa-youtube btn btn-light btn-square rounded-circle me-3"></i>
                                                 <span class="text-white">7,999 Subscriber</span>
                                             </a>
-                                            <a href="#" class="w-100 rounded btn btn-dark d-flex align-items-center p-3 mb-2">
-                                                <i class="fab fa-instagram btn btn-light btn-square rounded-circle me-3"></i>
+                                            <a href="#"
+                                                class="w-100 rounded btn btn-dark d-flex align-items-center p-3 mb-2">
+                                                <i
+                                                    class="fab fa-instagram btn btn-light btn-square rounded-circle me-3"></i>
                                                 <span class="text-white">19,764 Follower</span>
                                             </a>
-                                            <a href="#" class="w-100 rounded btn btn-secondary d-flex align-items-center p-3 mb-2">
+                                            <a href="#"
+                                                class="w-100 rounded btn btn-secondary d-flex align-items-center p-3 mb-2">
                                                 <i class="bi-cloud btn btn-light btn-square rounded-circle me-3"></i>
                                                 <span class="text-white">31,999 Subscriber</span>
                                             </a>
-                                            <a href="#" class="w-100 rounded btn btn-warning d-flex align-items-center p-3 mb-4">
-                                                <i class="fab fa-dribbble btn btn-light btn-square rounded-circle me-3"></i>
+                                            <a href="#"
+                                                class="w-100 rounded btn btn-warning d-flex align-items-center p-3 mb-4">
+                                                <i
+                                                    class="fab fa-dribbble btn btn-light btn-square rounded-circle me-3"></i>
                                                 <span class="text-white">37,999 Subscriber</span>
                                             </a>
                                         </div>
@@ -1404,12 +1616,16 @@ require 'db_connection.php';
                                                     <div class="rounded-circle position-relative">
                                                         <div class="overflow-hidden rounded-circle">
 
-                                                            <img src="./public/img/features-sports-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                            <img src="./public/img/features-sports-1.jpg"
+                                                                class="img-zoomin img-fluid rounded-circle w-100"
+                                                                alt="">
 
 
 
                                                         </div>
-                                                        <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                                        <span
+                                                            class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
+                                                            style="top: 10%; right: -10px;">3</span>
                                                     </div>
                                                 </div>
                                                 <div class="col-8">
@@ -1418,7 +1634,9 @@ require 'db_connection.php';
                                                         <a href="#" class="h6">
                                                             Get the best speak market, news.
                                                         </a>
-                                                        <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                                        <small class="text-body d-block"><i
+                                                                class="fas fa-calendar-alt me-1"></i> December 9,
+                                                            2024</small>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1429,12 +1647,16 @@ require 'db_connection.php';
                                                     <div class="rounded-circle position-relative">
                                                         <div class="overflow-hidden rounded-circle">
 
-                                                            <img src="./public/img/features-technology.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                            <img src="./public/img/features-technology.jpg"
+                                                                class="img-zoomin img-fluid rounded-circle w-100"
+                                                                alt="">
 
 
 
                                                         </div>
-                                                        <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                                        <span
+                                                            class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
+                                                            style="top: 10%; right: -10px;">3</span>
                                                     </div>
                                                 </div>
                                                 <div class="col-8">
@@ -1443,7 +1665,9 @@ require 'db_connection.php';
                                                         <a href="#" class="h6">
                                                             Get the best speak market, news.
                                                         </a>
-                                                        <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                                        <small class="text-body d-block"><i
+                                                                class="fas fa-calendar-alt me-1"></i> December 9,
+                                                            2024</small>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1454,12 +1678,16 @@ require 'db_connection.php';
                                                     <div class="rounded-circle position-relative">
                                                         <div class="overflow-hidden rounded-circle">
 
-                                                            <img src="./public/img/features-fashion.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                            <img src="./public/img/features-fashion.jpg"
+                                                                class="img-zoomin img-fluid rounded-circle w-100"
+                                                                alt="">
 
 
 
                                                         </div>
-                                                        <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                                        <span
+                                                            class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
+                                                            style="top: 10%; right: -10px;">3</span>
                                                     </div>
                                                 </div>
                                                 <div class="col-8">
@@ -1468,7 +1696,9 @@ require 'db_connection.php';
                                                         <a href="#" class="h6">
                                                             Get the best speak market, news.
                                                         </a>
-                                                        <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                                        <small class="text-body d-block"><i
+                                                                class="fas fa-calendar-alt me-1"></i> December 9,
+                                                            2024</small>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1479,11 +1709,15 @@ require 'db_connection.php';
                                                     <div class="rounded-circle position-relative">
                                                         <div class="overflow-hidden rounded-circle">
 
-                                                            <img src="./public/img/features-life-style.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                            <img src="./public/img/features-life-style.jpg"
+                                                                class="img-zoomin img-fluid rounded-circle w-100"
+                                                                alt="">
 
 
                                                         </div>
-                                                        <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                                        <span
+                                                            class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
+                                                            style="top: 10%; right: -10px;">3</span>
                                                     </div>
                                                 </div>
                                                 <div class="col-8">
@@ -1492,13 +1726,17 @@ require 'db_connection.php';
                                                         <a href="#" class="h6">
                                                             Get the best speak market, news.
                                                         </a>
-                                                        <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                                        <small class="text-body d-block"><i
+                                                                class="fas fa-calendar-alt me-1"></i> December 9,
+                                                            2024</small>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
-                                            <a href="#" class="link-hover btn border border-primary rounded-pill text-dark w-100 py-3 mb-4">View More</a>
+                                            <a href="#"
+                                                class="link-hover btn border border-primary rounded-pill text-dark w-100 py-3 mb-4">View
+                                                More</a>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="border-bottom my-3 pb-3">
@@ -1507,42 +1745,50 @@ require 'db_connection.php';
                                             <ul class="nav nav-pills d-inline-flex text-center mb-4">
                                                 <li class="nav-item mb-3">
                                                     <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
-                                                        <span class="text-dark link-hover" style="width: 90px;">Lifestyle</span>
+                                                        <span class="text-dark link-hover"
+                                                            style="width: 90px;">Lifestyle</span>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item mb-3">
                                                     <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
-                                                        <span class="text-dark link-hover" style="width: 90px;">Sports</span>
+                                                        <span class="text-dark link-hover"
+                                                            style="width: 90px;">Sports</span>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item mb-3">
                                                     <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
-                                                        <span class="text-dark link-hover" style="width: 90px;">Politics</span>
+                                                        <span class="text-dark link-hover"
+                                                            style="width: 90px;">Politics</span>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item mb-3">
                                                     <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
-                                                        <span class="text-dark link-hover" style="width: 90px;">Magazine</span>
+                                                        <span class="text-dark link-hover"
+                                                            style="width: 90px;">Magazine</span>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item mb-3">
                                                     <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
-                                                        <span class="text-dark link-hover" style="width: 90px;">Game</span>
+                                                        <span class="text-dark link-hover"
+                                                            style="width: 90px;">Game</span>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item mb-3">
                                                     <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
-                                                        <span class="text-dark link-hover" style="width: 90px;">Movie</span>
+                                                        <span class="text-dark link-hover"
+                                                            style="width: 90px;">Movie</span>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item mb-3">
                                                     <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
-                                                        <span class="text-dark link-hover" style="width: 90px;">Travel</span>
+                                                        <span class="text-dark link-hover"
+                                                            style="width: 90px;">Travel</span>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item mb-3">
                                                     <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
-                                                        <span class="text-dark link-hover" style="width: 90px;">World</span>
+                                                        <span class="text-dark link-hover"
+                                                            style="width: 90px;">World</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -1550,7 +1796,8 @@ require 'db_connection.php';
                                         <div class="col-lg-12">
                                             <div class="position-relative banner-2">
 
-                                                <img src="./public/img/banner-2.jpg" class="img-fluid w-100 rounded" alt="">
+                                                <img src="./public/img/banner-2.jpg" class="img-fluid w-100 rounded"
+                                                    alt="">
 
                                                 <img src="img/banner-2.jpg" class="img-fluid w-100 rounded" alt="">
 
@@ -1586,8 +1833,11 @@ require 'db_connection.php';
                     </div>
                     <div class="col-lg-9">
                         <div class="d-flex position-relative rounded-pill overflow-hidden">
-                            <input class="form-control border-0 w-100 py-3 rounded-pill" type="email" placeholder="example@gmail.com">
-                            <button type="submit" class="btn btn-primary border-0 py-3 px-5 rounded-pill text-white position-absolute" style="top: 0; right: 0;">Subscribe Now</button>
+                            <input class="form-control border-0 w-100 py-3 rounded-pill" type="email"
+                                placeholder="example@gmail.com">
+                            <button type="submit"
+                                class="btn btn-primary border-0 py-3 px-5 rounded-pill text-white position-absolute"
+                                style="top: 0; right: 0;">Subscribe Now</button>
                         </div>
                     </div>
                 </div>
@@ -1596,14 +1846,19 @@ require 'db_connection.php';
                 <div class="col-lg-6 col-xl-3">
                     <div class="footer-item-1">
                         <h4 class="mb-4 text-white">Get In Touch</h4>
-                        <p class="text-secondary line-h">Address: <span class="text-white">123 Streat, New York</span></p>
+                        <p class="text-secondary line-h">Address: <span class="text-white">123 Streat, New York</span>
+                        </p>
                         <p class="text-secondary line-h">Email: <span class="text-white">Example@gmail.com</span></p>
                         <p class="text-secondary line-h">Phone: <span class="text-white">+0123 4567 8910</span></p>
                         <div class="d-flex line-h">
-                            <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter text-dark"></i></a>
-                            <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f text-dark"></i></a>
-                            <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube text-dark"></i></a>
-                            <a class="btn btn-light btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in text-dark"></i></a>
+                            <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-twitter text-dark"></i></a>
+                            <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-facebook-f text-dark"></i></a>
+                            <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-youtube text-dark"></i></a>
+                            <a class="btn btn-light btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-linkedin-in text-dark"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1615,7 +1870,8 @@ require 'db_connection.php';
                                 <div class="d-flex align-items-center">
                                     <div class="rounded-circle border border-2 border-primary overflow-hidden">
 
-                                        <img src="./public/img/footer-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                        <img src="./public/img/footer-1.jpg"
+                                            class="img-zoomin img-fluid rounded-circle w-100" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column ps-4">
@@ -1623,7 +1879,8 @@ require 'db_connection.php';
                                         <a href="#" class="h6 text-white">
                                             Get the best speak market, news.
                                         </a>
-                                        <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                        <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec
+                                            9, 2024</small>
                                     </div>
                                 </div>
                             </a>
@@ -1633,7 +1890,8 @@ require 'db_connection.php';
                                 <div class="d-flex align-items-center">
                                     <div class="rounded-circle border border-2 border-primary overflow-hidden">
 
-                                        <img src="./public/img/footer-2.jpg" class="img-zoominimg-fluid rounded-circle w-100" alt="">
+                                        <img src="./public/img/footer-2.jpg"
+                                            class="img-zoominimg-fluid rounded-circle w-100" alt="">
 
 
 
@@ -1643,7 +1901,8 @@ require 'db_connection.php';
                                         <a href="#" class="h6 text-white">
                                             Get the best speak market, news.
                                         </a>
-                                        <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                        <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec
+                                            9, 2024</small>
                                     </div>
                                 </div>
                             </a>
@@ -1653,12 +1912,18 @@ require 'db_connection.php';
                 <div class="col-lg-6 col-xl-3">
                     <div class="d-flex flex-column text-start footer-item-3">
                         <h4 class="mb-4 text-white">Categories</h4>
-                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Sports</a>
-                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Magazine</a>
-                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Lifestyle</a>
-                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Politician</a>
-                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Technology</a>
-                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Intertainment</a>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
+                            Sports</a>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
+                            Magazine</a>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
+                            Lifestyle</a>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
+                            Politician</a>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
+                            Technology</a>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
+                            Intertainment</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-xl-3">
@@ -1668,7 +1933,8 @@ require 'db_connection.php';
                             <div class="col-4">
                                 <div class="rounded overflow-hidden">
 
-                                    <img src="./public/img/footer-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    <img src="./public/img/footer-1.jpg" class="img-zoomin img-fluid rounded w-100"
+                                        alt="">
 
 
 
@@ -1677,7 +1943,8 @@ require 'db_connection.php';
                             <div class="col-4">
                                 <div class="rounded overflow-hidden">
 
-                                    <img src="./public/img/footer-2.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    <img src="./public/img/footer-2.jpg" class="img-zoomin img-fluid rounded w-100"
+                                        alt="">
 
 
 
@@ -1686,7 +1953,8 @@ require 'db_connection.php';
                             <div class="col-4">
                                 <div class="rounded overflow-hidden">
 
-                                    <img src="./public/img/footer-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    <img src="./public/img/footer-3.jpg" class="img-zoomin img-fluid rounded w-100"
+                                        alt="">
 
 
 
@@ -1695,7 +1963,8 @@ require 'db_connection.php';
                             <div class="col-4">
                                 <div class="rounded overflow-hidden">
 
-                                    <img src="./public/img/footer-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    <img src="./public/img/footer-4.jpg" class="img-zoomin img-fluid rounded w-100"
+                                        alt="">
 
 
 
@@ -1704,7 +1973,8 @@ require 'db_connection.php';
                             <div class="col-4">
                                 <div class="rounded overflow-hidden">
 
-                                    <img src="./public/img/footer-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    <img src="./public/img/footer-5.jpg" class="img-zoomin img-fluid rounded w-100"
+                                        alt="">
 
 
 
@@ -1713,7 +1983,8 @@ require 'db_connection.php';
                             <div class="col-4">
                                 <div class="rounded overflow-hidden">
 
-                                    <img src="./public/img/footer-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    <img src="./public/img/footer-6.jpg" class="img-zoomin img-fluid rounded w-100"
+                                        alt="">
 
 
 
@@ -1733,7 +2004,8 @@ require 'db_connection.php';
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site
+                            Name</a>, All right reserved.</span>
                 </div>
                 <div class="col-md-6 my-auto text-center text-md-end text-white">
                     <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
@@ -1748,7 +2020,8 @@ require 'db_connection.php';
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary border-2 border-white rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#" class="btn btn-primary border-2 border-white rounded-circle back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

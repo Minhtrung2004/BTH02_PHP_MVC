@@ -1,20 +1,27 @@
 <?php
-function connectionDatabase($severname, $username, $password, $dbname)
+function connectionDatabase($servername, $username, $password, $dbname)
 {
     try {
-        $conn = new PDO("mysql:host=$severname; dbname = $dbname", $username . $password);
+        // Kết nối cơ sở dữ liệu
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $conn;
     } catch (PDOException $e) {
-        die("NULL" . $e->getMessage());
+        die("Kết nối thất bại: " . $e->getMessage());
     }
 }
 
-$severname = "localhost";
+$servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "";
+$password = "123456";
+$dbname = "tintuc";
 
-$conn = connectionDatabase($severname, $username, $password, $dbname);
-$conn = null;
+try {
+    $conn = connectionDatabase($servername, $username, $password, $dbname);
+    echo "Kết nối thành công!";
+} catch (PDOException $e) {
+    echo "Lỗi: " . $e->getMessage();
+} finally {
+    $conn = null;
+}
 ?>
