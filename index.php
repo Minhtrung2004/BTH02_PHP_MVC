@@ -179,7 +179,7 @@
 
                                     <img src="./public/img/features-technology.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
 
-                                    <img src="img/features-technology.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+
 
                                 </div>
                                 <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
@@ -515,8 +515,6 @@
                         <div class="rounded-top overflow-hidden">
 
                             <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
-
-                            <img src="img/news-5.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
 
                         </div>
                         <div class="d-flex flex-column p-4">
@@ -1306,11 +1304,7 @@
                             <div class="whats-item">
                                 <div class="bg-light rounded">
                                     <div class="rounded-top overflow-hidden">
-
                                         <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
-
-                                        <img src="img/news-5.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
-
                                     </div>
                                     <div class="d-flex flex-column p-4">
                                         <a href="#" class="h4">There are many variations of passages of Lorem Ipsum available,</a>
@@ -1332,7 +1326,6 @@
 
                                         <img src="./public/img/lifestyle-1.jpg" class="img-fluid w-100 rounded" alt="">
 
-                                        <img src="img/lifestyle-1.jpg" class="img-fluid w-100 rounded" alt="">
 
                                         <div class="lifestyle-content">
                                             <div class="mt-auto">
@@ -1350,7 +1343,7 @@
 
                                         <img src="./public/img/lifestyle-2.jpg" class="img-fluid w-100 rounded" alt="">
 
-                                        <img src="img/lifestyle-2.jpg" class="img-fluid w-100 rounded" alt="">
+
 
                                         <div class="lifestyle-content">
                                             <div class="mt-auto">
@@ -1621,8 +1614,6 @@
 
                                         <img src="./public/img/footer-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
 
-                                        <img src="img/footer-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
-
                                     </div>
                                     <div class="d-flex flex-column ps-4">
                                         <p class="text-uppercase text-white mb-3">Life Style</p>
@@ -1641,7 +1632,7 @@
 
                                         <img src="./public/img/footer-2.jpg" class="img-zoominimg-fluid rounded-circle w-100" alt="">
 
-                                        <img src="img/footer-2.jpg" class="img-zoominimg-fluid rounded-circle w-100" alt="">
+
 
                                     </div>
                                     <div class="d-flex flex-column ps-4">
@@ -1676,7 +1667,7 @@
 
                                     <img src="./public/img/footer-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                    <img src="img/footer-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                 </div>
                             </div>
@@ -1685,7 +1676,7 @@
 
                                     <img src="./public/img/footer-2.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                    <img src="img/footer-2.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                 </div>
                             </div>
@@ -1694,7 +1685,7 @@
 
                                     <img src="./public/img/footer-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                    <img src="img/footer-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                 </div>
                             </div>
@@ -1703,7 +1694,7 @@
 
                                     <img src="./public/img/footer-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                    <img src="img/footer-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                 </div>
                             </div>
@@ -1712,7 +1703,7 @@
 
                                     <img src="./public/img/footer-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                    <img src="img/footer-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                 </div>
                             </div>
@@ -1721,7 +1712,7 @@
 
                                     <img src="./public/img/footer-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
 
-                                    <img src="img/footer-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+
 
                                 </div>
                             </div>
