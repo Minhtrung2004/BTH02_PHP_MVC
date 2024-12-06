@@ -83,7 +83,7 @@
                     <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
                         <div class="navbar-nav mx-auto border-top">
                             <a href="../../index.php" class="nav-item nav-link">Home</a>
-                            <a href="detail-page.html" class="nav-item nav-link">Detail Page</a>
+                            <a href="./detail.php" class="nav-item nav-link">Detail Page</a>
                             <a href="404.html" class="nav-item nav-link">404 Page</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
