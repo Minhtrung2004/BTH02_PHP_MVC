@@ -81,14 +81,14 @@
                         <div class="navbar-nav mx-auto border-top">
                             <a href="../../index.php" class="nav-item nav-link">Home</a>
                             <a href="detail-page.html" class="nav-item nav-link active">Detail Page</a>
-                            <a href="404.html" class="nav-item nav-link">404 Page</a>
+                            <a href="404.html" class="nav-item nav-link">World</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sports</a>
                                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="#" class="dropdown-item">Dropdown 1</a>
-                                    <a href="#" class="dropdown-item">Dropdown 2</a>
-                                    <a href="#" class="dropdown-item">Dropdown 3</a>
-                                    <a href="#" class="dropdown-item">Dropdown 4</a>
+                                <a href="#" class="dropdown-item">Football</a>
+                                    <a href="#" class="dropdown-item">Boxing</a>
+                                    <a href="#" class="dropdown-item">Tennis</a>
+                                    <a href="#" class="dropdown-item">Golf</a>
                                 </div>
                             </div>
                             <a href="contact.php" class="nav-item nav-link">Contact Us</a>
