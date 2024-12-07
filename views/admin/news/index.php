@@ -82,10 +82,20 @@ $results = $stmt->fetchAll();
                                 <td><?php echo htmlspecialchars($result['image']) ?></td>
                                 <td><?php echo htmlspecialchars($result['created_at']) ?></td>
                                 <td><?php echo htmlspecialchars($result['category_id']) ?></td>
+
                                 <td>
-                                    <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                                    <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                    <!-- Nút Xem -->
+                                    <a href="../../../Router/news-router.php?action=view&id=<?php echo $result['id']; ?>" class="view" title="View" data-toggle="tooltip">
+                                        <i class="material-icons">&#xE417;</i>
+                                    </a>
+                                    <!-- Nút Sửa -->
+                                    <a href="../../../Router/news-router.php?action=edit&id=<?php echo $result['id']; ?>" class="edit" title="Edit" data-toggle="tooltip">
+                                        <i class="material-icons">&#xE254;</i>
+                                    </a>
+                                    <!-- Nút Xóa -->
+                                    <a href="/Router/news-router.php?action=delete&id=<?php echo $result['id']; ?>" class="delete" title="Delete">
+                                        <i class="material-icons">&#xE872;</i>
+                                    </a>
                                 </td>
                             </tr>
                         <?php } ?>
@@ -128,4 +138,5 @@ $results = $stmt->fetchAll();
     </div>
 </body>
 <script src="../../public/js/admin.js"></script>
+
 </html>
