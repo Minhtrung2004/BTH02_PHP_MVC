@@ -1,4 +1,3 @@
-
 <?php
 function connectionDatabase($servername, $username, $password, $dbname)
 {
@@ -8,21 +7,15 @@ function connectionDatabase($servername, $username, $password, $dbname)
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $conn;
     } catch (PDOException $e) {
+        // Thông báo lỗi và kết thúc chương trình
         die("Kết nối thất bại: " . $e->getMessage());
     }
 }
 
+// Cấu hình cơ sở dữ liệu
 $servername = "localhost";
 $username = "root";
-$password = "123456";
+$password = "";
 $dbname = "tintuc";
 
-try {
-    $conn = connectionDatabase($servername, $username, $password, $dbname);
-    echo "Kết nối thành công!";
-} catch (PDOException $e) {
-    echo "Lỗi: " . $e->getMessage();
-} finally {
-    $conn = null;
-}
 ?>
