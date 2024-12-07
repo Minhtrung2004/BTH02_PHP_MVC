@@ -1,3 +1,28 @@
+<?php
+require_once('C:/xampp/htdocs/BTH02_PHP_MVC/core/Connection.php');
+
+$category_id = isset($_GET['category_id']) ? $_GET['category_id'] : null;
+
+$pdo = connectionDatabase($servername, $username, $password, $dbname);
+
+if ($category_id) {
+    $stmt = $pdo->prepare("SELECT * FROM news WHERE category_id = :category_id LIMIT 10");
+    $stmt->bindParam(':category_id', $category_id, PDO::PARAM_INT);
+    $stmt->execute();
+    $news = $stmt->fetchAll();
+} else {
+    $stmt = $pdo->query("SELECT * FROM news LIMIT 10");
+    $news = $stmt->fetchAll();
+}
+
+$stmt = $pdo->query("SELECT * FROM categories");
+$categories = $stmt->fetchAll();
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -88,17 +113,6 @@
                         <div class="navbar-nav mx-auto border-top">
                             <a href="../../index.php" class="nav-item nav-link">Home</a>
                             <a href="detail-page.html" class="nav-item nav-link active">Detail Page</a>
-                            <a href="404.html" class="nav-item nav-link">World</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sports</a>
-                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="#" class="dropdown-item">Football</a>
-                                    <a href="#" class="dropdown-item">Boxing</a>
-                                    <a href="#" class="dropdown-item">Tennis</a>
-                                    <a href="#" class="dropdown-item">Golf</a>
-                                </div>
-                            </div>
-                            <a href="contact.php" class="nav-item nav-link">Contact Us</a>
                         </div>
                         <div class="d-flex flex-nowrap border-top pt-3 pt-xl-0">
                             <div class="d-flex">
@@ -156,10 +170,6 @@
                     </div>
                     <div class="position-relative rounded overflow-hidden mb-3">
                         <img src="../../public/img/news-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
-                        <div class="position-absolute text-white px-4 py-2 bg-primary rounded"
-                            style="top: 20px; right: 20px;">
-                            Busimess
-                        </div>
                     </div>
                     <div class="d-flex justify-content-between">
                         <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
@@ -220,7 +230,7 @@
                                 <div class="d-flex align-items-center p-3 bg-white rounded">
                                     <img src="../../public/img/chatGPT.jpg" class="img-fluid rounded" alt="">
                                     <div class="ms-3">
-                                        <a href="https://topdev.vn/blog/chat-gpt-la-gi/" class="h5 mb-2">Lợi ích của
+                                        <a href="https://topdev.vn/blog/chat-gpt-la-gi/" class="h5 mb-2">Ứng dụng của
                                             chat gpt</a>
                                         <p class="text-dark mt-3 mb-0 me-3"><i class="fa fa-clock"></i> 06 minute read
                                         </p>
@@ -282,50 +292,50 @@
                         <div class="col-12">
                             <div class="p-3 rounded border">
                                 <div class="input-group w-100 mx-auto d-flex mb-4">
-                                    <input type="search" class="form-control p-3" placeholder="keywords"
-                                        aria-describedby="search-icon-1">
-                                    <span id="search-icon-1" class="btn btn-primary input-group-text p-3"><i
-                                            class="fa fa-search text-white"></i></span>
                                 </div>
                                 <h4 class="mb-4">Popular Categories</h4>
+                                <?php foreach($categories as $n):?>
                                 <div class="row g-2">
-                                    <div class="col-12">
-                                        <a href="#"
+                                    <div class="col-12 mb-2">
+                                        <button
                                             class="link-hover btn btn-light w-100 rounded text-uppercase text-dark py-3">
-                                            Life Style
-                                        </a>
-                                    </div>
-                                    <div class="col-12">
-                                        <a href="#"
-                                            class="link-hover btn btn-light w-100 rounded text-uppercase text-dark py-3">
-                                            Fashion
-                                        </a>
-                                    </div>
-                                    <div class="col-12">
-                                        <a href="#"
-                                            class="link-hover btn btn-light w-100 rounded text-uppercase text-dark py-3">
-                                            Relationship
-                                        </a>
-                                    </div>
-                                    <div class="col-12">
-                                        <a href="#"
-                                            class="link-hover btn btn-light w-100 rounded text-uppercase text-dark py-3">
-                                            Art & Culture
-                                        </a>
-                                    </div>
-                                    <div class="col-12">
-                                        <a href="#"
-                                            class="link-hover btn btn-light w-100 rounded text-uppercase text-dark py-3">
-                                            Self Development
-                                        </a>
-                                    </div>
-                                    <div class="col-12">
-                                        <a href="#"
-                                            class="link-hover btn btn-light w-100 rounded text-uppercase text-dark py-3 mb-4">
-                                            travel & tourism
-                                        </a>
+                                            <a href="?category_id=<?php echo $n['id']; ?>"
+                                                class="text-dark text-decoration-none">
+                                                <p class="card-text"><?php echo $n['name']; ?></p>
+                                            </a>
+                                        </button>
                                     </div>
                                 </div>
+                                <?php endforeach; ?>
+                                <h4 class="my-4">News By Popular Categories</h4>
+                                <?php foreach($news as $n): ?>
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <div class="row g-4 align-items-center features-item">
+                                            <div class="col-4 mb-2">
+                                                <div class="rounded-circle position-relative">
+                                                    <div class="overflow-hidden rounded-circle">
+                                                        <img src="../../public/img/<?php echo $n['image'];?>"
+                                                            class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="features-content d-flex flex-column">
+                                                    <p class="text-uppercase mb-2"><?php echo $n['title']; ?></p>
+                                                    <a href="detailPage.php?id=<?php echo $n['id']; ?>"
+                                                        class="h6"><?php echo $n['content']; ?></a>
+                                                    <small class="text-body d-block">
+                                                        <i class="fas fa-calendar-alt me-1"></i>
+                                                        <?php echo $n['created_at']; ?>
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php endforeach; ?>
+
                                 <h4 class="my-4">Stay Connected</h4>
                                 <div class="row g-4">
                                     <div class="col-12">
@@ -363,113 +373,6 @@
                                         </a>
                                     </div>
                                 </div>
-                                <h4 class="my-4">Popular News</h4>
-                                <div class="row g-4">
-                                    <div class="col-12">
-                                        <div class="row g-4 align-items-center features-item">
-                                            <div class="col-4">
-                                                <div class="rounded-circle position-relative">
-                                                    <div class="overflow-hidden rounded-circle">
-                                                        <img src="../../public/img/features-sports-1.jpg"
-                                                            class="img-zoomin img-fluid rounded-circle w-100" alt="">
-                                                    </div>
-                                                    <span
-                                                        class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
-                                                        style="top: 10%; right: -10px;">3</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="features-content d-flex flex-column">
-                                                    <p class="text-uppercase mb-2">Sports</p>
-                                                    <a href="#" class="h6">
-                                                        Get the best speak market, news.
-                                                    </a>
-                                                    <small class="text-body d-block"><i
-                                                            class="fas fa-calendar-alt me-1"></i> December 9,
-                                                        2024</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="row g-4 align-items-center features-item">
-                                            <div class="col-4">
-                                                <div class="rounded-circle position-relative">
-                                                    <div class="overflow-hidden rounded-circle">
-                                                        <img src="../../public/img/features-technology.jpg"
-                                                            class="img-zoomin img-fluid rounded-circle w-100" alt="">
-                                                    </div>
-                                                    <span
-                                                        class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
-                                                        style="top: 10%; right: -10px;">3</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="features-content d-flex flex-column">
-                                                    <p class="text-uppercase mb-2">Technology</p>
-                                                    <a href="#" class="h6">
-                                                        Get the best speak market, news.
-                                                    </a>
-                                                    <small class="text-body d-block"><i
-                                                            class="fas fa-calendar-alt me-1"></i> December 9,
-                                                        2024</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="row g-4 align-items-center features-item">
-                                            <div class="col-4">
-                                                <div class="rounded-circle position-relative">
-                                                    <div class="overflow-hidden rounded-circle">
-                                                        <img src="../../public/img/features-fashion.jpg"
-                                                            class="img-zoomin img-fluid rounded-circle w-100" alt="">
-                                                    </div>
-                                                    <span
-                                                        class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
-                                                        style="top: 10%; right: -10px;">3</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="features-content d-flex flex-column">
-                                                    <p class="text-uppercase mb-2">Fashion</p>
-                                                    <a href="#" class="h6">
-                                                        Get the best speak market, news.
-                                                    </a>
-                                                    <small class="text-body d-block"><i
-                                                            class="fas fa-calendar-alt me-1"></i> December 9,
-                                                        2024</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="row g-4 align-items-center features-item">
-                                            <div class="col-4">
-                                                <div class="rounded-circle position-relative">
-                                                    <div class="overflow-hidden rounded-circle">
-                                                        <img src="../../public/img/features-life-style.jpg"
-                                                            class="img-zoomin img-fluid rounded-circle w-100" alt="">
-                                                    </div>
-                                                    <span
-                                                        class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
-                                                        style="top: 10%; right: -10px;">3</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="features-content d-flex flex-column">
-                                                    <p class="text-uppercase mb-2">Life Style</p>
-                                                    <a href="#" class="h6">
-                                                        Get the best speak market, news.
-                                                    </a>
-                                                    <small class="text-body d-block"><i
-                                                            class="fas fa-calendar-alt me-1"></i> December 9,
-                                                        2024</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -501,10 +404,11 @@
                 <div class="col-lg-6 col-xl-3">
                     <div class="footer-item-1">
                         <h4 class="mb-4 text-white">Get In Touch</h4>
-                        <p class="text-secondary line-h">Address: <span class="text-white">123 Streat, New York</span>
+                        <p class="text-secondary line-h">Address: <span class="text-white">175 Tay Son, Dong Da
+                                District, Hanoi</span>
                         </p>
                         <p class="text-secondary line-h">Email: <span class="text-white">Example@gmail.com</span></p>
-                        <p class="text-secondary line-h">Phone: <span class="text-white">+0123 4567 8910</span></p>
+                        <p class="text-secondary line-h">Phone: <span class="text-white">0987654321</span></p>
                         <div class="d-flex line-h">
                             <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i
                                     class="fab fa-twitter text-dark"></i></a>
@@ -517,62 +421,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-xl-3">
-                    <div class="footer-item-2">
-                        <div class="d-flex flex-column mb-4">
-                            <h4 class="mb-4 text-white">Recent Posts</h4>
-                            <a href="#">
-                                <div class="d-flex align-items-center">
-                                    <div class="rounded-circle border border-2 border-primary overflow-hidden">
-                                        <img src="../../public/img/footer-1.jpg"
-                                            class="img-zoomin img-fluid rounded-circle w-100" alt="">
-                                    </div>
-                                    <div class="d-flex flex-column ps-4">
-                                        <p class="text-uppercase text-white mb-3">Life Style</p>
-                                        <a href="#" class="h6 text-white">
-                                            Get the best speak market, news.
-                                        </a>
-                                        <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec
-                                            9, 2024</small>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <a href="#">
-                                <div class="d-flex align-items-center">
-                                    <div class="rounded-circle border border-2 border-primary overflow-hidden">
-                                        <img src="../../public/img/footer-2.jpg"
-                                            class="img-zoomin img-fluid rounded-circle w-100" alt="">
-                                    </div>
-                                    <div class="d-flex flex-column ps-4">
-                                        <p class="text-uppercase text-white mb-3">Sports</p>
-                                        <a href="#" class="h6 text-white">
-                                            Get the best speak market, news.
-                                        </a>
-                                        <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec
-                                            9, 2024</small>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col-lg-6 col-xl-3">
                     <div class="d-flex flex-column text-start footer-item-3">
                         <h4 class="mb-4 text-white">Categories</h4>
-                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
-                            Sports</a>
-                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
-                            Magazine</a>
-                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
-                            Lifestyle</a>
-                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
-                            Politician</a>
-                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
-                            Technology</a>
-                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
-                            Intertainment</a>
+                        <?php foreach($categories as $n): ?>
+                        <p class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
+                            <?php echo $n['name'];?></p>
+                        <?php endforeach; ?>
                     </div>
                 </div>
                 <div class="col-lg-6 col-xl-3">
@@ -633,9 +489,6 @@
                             Name</a>, All right reserved.</span>
                 </div>
                 <div class="col-md-6 my-auto text-center text-md-end text-white">
-                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
                     Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
                 </div>
             </div>
