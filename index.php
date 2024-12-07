@@ -4,7 +4,7 @@ $sql = "SELECT * FROM news";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-$articles = array_slice($results, 0, 4);
+$articles = array_slice($results, 0, 5);
 ?>
 
 <!DOCTYPE html>
@@ -203,25 +203,10 @@ $articles = array_slice($results, 0, 4);
                                     <p class="fs-5 mb-0"><i class="fa fa-eye"> 3.5k Views</i></p>
                                 </div>
                             </div>
-                            <!--do dữ liệu -->
-                            <?php foreach ($articles as $article) { ?>
-                                <div class="col-12">
-                                    <div class="row g-4 align-items-center">
-                                        <div class="col-5">
-                                            <div class="overflow-hidden rounded">
-                                                <img src="./public/img/<?php echo $article['image']; ?>" class="img-zoomin img-fluid rounded w-100" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-7">
-                                            <div class="features-content d-flex flex-column">
-                                                <a href="#" class="h6"><?php echo $article['title']; ?></a>
-                                                <small><i class="fa fa-clock"> <?php echo $article['content']; ?></i></small>
-                                                <small><i class="fa fa-eye"> <?php echo $article['views']; ?></i></small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php } ?>
+                            <!--sub news -->
+                            <?php
+                            include './views/common/sub-news.php';
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -419,106 +404,24 @@ $articles = array_slice($results, 0, 4);
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="row g-4">
-                                            <div class="col-12">
-                                                <div class="row g-4 align-items-center">
-                                                    <div class="col-5">
-                                                        <div class="overflow-hidden rounded">
-
-                                                            <img src="./public/img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
-
-
-
+                                            <!-- news sub footer -->
+                                            <?php foreach ($articles as $article) { ?>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="./public/img/<?php echo $article['image']; ?>" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <div class="features-content d-flex flex-column">
-                                                            <p class="text-uppercase mb-2">Sports</p>
-                                                            <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="row g-4 align-items-center">
-                                                    <div class="col-5">
-                                                        <div class="overflow-hidden rounded">
-
-                                                            <img src="./public/img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
-
-
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <div class="features-content d-flex flex-column">
-                                                            <p class="text-uppercase mb-2">Sports</p>
-                                                            <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <a href="#" class="h6"><?php echo $article['title']; ?></a>
+                                                                <small><i class="fa fa-clock"> <?php echo $article['content']; ?></i></small>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="row g-4 align-items-center">
-                                                    <div class="col-5">
-                                                        <div class="overflow-hidden rounded">
-
-                                                            <img src="./public/img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
-
-
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <div class="features-content d-flex flex-column">
-                                                            <p class="text-uppercase mb-2">Sports</p>
-                                                            <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="row g-4 align-items-center">
-                                                    <div class="col-5">
-                                                        <div class="overflow-hidden rounded">
-
-                                                            <img src="./public/img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
-
-
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <div class="features-content d-flex flex-column">
-                                                            <p class="text-uppercase mb-2">Sports</p>
-                                                            <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="row g-4 align-items-center">
-                                                    <div class="col-5">
-                                                        <div class="overflow-hidden rounded">
-
-                                                            <img src="./public/img/news-7.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
-
-
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <div class="features-content d-flex flex-column">
-                                                            <p class="text-uppercase mb-2">Magazine</p>
-                                                            <a href="#" class="h6">Get the best speak market, news.</a>
-                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <?php } ?>
                                         </div>
                                     </div>
                                 </div>
