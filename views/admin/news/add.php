@@ -11,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
         // Kết nối tới cơ sở dữ liệu
         $dbConnection = Connection::getInstance()->getConnection();
+        
 
         // Insert dữ liệu
         $sql = "INSERT INTO news (title, content, image, created_at, category_id) 
