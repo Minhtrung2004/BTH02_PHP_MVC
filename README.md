@@ -1,4 +1,4 @@
-•	Nguyễn Lê: Xây dựng chức năng đăng nhập, đăng xuất cho quản trị viên.
+•	Nguyễn Lê Đức: Xây dựng chức năng đăng nhập, đăng xuất cho quản trị viên.
 
 •	Hoàng Quang Vinh: Xây dựng chức năng hiển thị danh sách tin tức, xem chi tiết tin tức, tìm kiếm tin tức cho người dùng khách.
 
