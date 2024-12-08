@@ -1,3 +1,22 @@
+<?php
+// Kiểm tra nếu có dữ liệu từ form
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Lấy giá trị từ form
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Kiểm tra thông tin đăng nhập (ví dụ: so sánh với dữ liệu trong CSDL hoặc mảng)
+    if ($username == 'admin' && $password == 'password') {
+        // Đăng nhập thành công, chuyển hướng đến trang khác
+        header("Location: views/admin/news/index.php");
+        exit();
+    } else {
+        // Đăng nhập thất bại, hiển thị thông báo lỗi
+        echo "<p class='text-danger'>Tài khoản hoặc mật khẩu không đúng!</p>";
+    }
+}
+?>
+
 <!-- views/admin/login.php -->
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +41,21 @@
                     <form action="login.php" method="POST">
                         <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                             <p class="lead fw-normal mb-0 me-3">Đăng nhập với</p>
+                            
+                               <!-- Facebook icon -->
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-facebook-f"></i>
+        </button>
+
+        <!-- Twitter icon -->
+        <button type="button" class="btn btn-info btn-floating mx-1">
+            <i class="fab fa-twitter"></i>
+        </button>
+
+        <!-- Instagram icon -->
+        <button type="button" class="btn btn-danger btn-floating mx-1">
+            <i class="fab fa-instagram"></i>
+        </button>
                         </div>
 
                         <div class="divider d-flex align-items-center my-4">

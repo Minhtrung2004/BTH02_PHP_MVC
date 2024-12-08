@@ -14,8 +14,8 @@ function connectionDatabase($servername, $username, $password, $dbname)
 
 // Cấu hình cơ sở dữ liệu
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "leduc";
+$password = "password";
 $dbname = "tintuc";
 
 ?>
