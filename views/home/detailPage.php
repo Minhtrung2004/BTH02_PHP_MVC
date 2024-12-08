@@ -1,34 +1,46 @@
 <?php
-require_once('C:/xampp/htdocs/BTH02_PHP_MVC/core/Connection.php');
+require_once('../../core/connection.php');
 
-$category_id = isset($_GET['category_id']) ? $_GET['category_id'] : null;
+// Lấy kết nối từ hàm connectionDatabase
+$conn = connectionDatabase($servername, $username, $password, $dbname);
 
-$pdo = connectionDatabase($servername, $username, $password, $dbname);
+if (isset($_GET['id'])) {
+    $news_id = $_GET['id'];
 
-if ($category_id) {
-    $stmt = $pdo->prepare("SELECT * FROM news WHERE category_id = :category_id LIMIT 10");
-    $stmt->bindParam(':category_id', $category_id, PDO::PARAM_INT);
+    // Truy vấn bài báo dựa trên id sử dụng PDO
+    $query = "SELECT * FROM news WHERE id = :id";
+    $stmt = $conn->prepare($query);
+    $stmt->bindParam(':id', $news_id, PDO::PARAM_INT);
     $stmt->execute();
-    $news = $stmt->fetchAll();
+
+    // Kiểm tra nếu bài báo tồn tại
+    if ($stmt->rowCount() > 0) {
+        $news = $stmt->fetch(PDO::FETCH_ASSOC);
+    } else {
+        echo "Bài báo không tồn tại.";
+        exit;
+    }
 } else {
-    $stmt = $pdo->query("SELECT * FROM news LIMIT 10");
-    $news = $stmt->fetchAll();
+    echo "Không tìm thấy bài báo.";
+    exit;
 }
 
-$stmt = $pdo->query("SELECT * FROM categories");
-$categories = $stmt->fetchAll();
-
-
-
+// Lấy danh sách categories
+try {
+    $stmt = $conn->query("SELECT * FROM categories");
+    $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    echo "Lỗi khi lấy danh sách danh mục: " . htmlspecialchars($e->getMessage());
+    $categories = [];
+}
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Detail Page </title>
+    <title>Chi tiết bài báo</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -74,8 +86,13 @@ $categories = $stmt->fetchAll();
                                 <img src="../../public/img/features-fashion.jpg"
                                     class="img-fluid rounded-circle border border-3 border-primary me-2"
                                     style="width: 30px; height: 30px;" alt="">
+
+                                <img src="../../public/img/features-sports-1.jpg"
+                                    class="img-fluid rounded-circle border border-3 border-primary me-2"
+                                    style="width: 30px; height: 30px;" alt="">
+
                                 <a href="#">
-                                    <p class="text-white mb-0 link-hover">Giải Mã Cuộc Cách Mạng Công Nghệ 4.0</p>
+                                    <p class="text-white mb-0 link-hover">Cải Cách Giáo Dục: Tương Lai Và Thách Thức</p>
                                 </a>
                             </div>
                         </div>
@@ -111,7 +128,7 @@ $categories = $stmt->fetchAll();
                     <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
                         <div class="navbar-nav mx-auto border-top">
                             <a href="../../index.php" class="nav-item nav-link">Home</a>
-                            <a href="detail-page.html" class="nav-item nav-link active">Detail Page</a>
+                            <a href="./detail.php" class="nav-item nav-link">Detail Page</a>
                         </div>
                         <div class="d-flex flex-nowrap border-top pt-3 pt-xl-0">
                             <div class="d-flex">
@@ -120,7 +137,7 @@ $categories = $stmt->fetchAll();
                                     <strong class="fs-4 text-secondary">25°C</strong>
                                     <div class="d-flex flex-column ms-2" style="width: 150px;">
                                         <span class="text-body">Ha Noi,</span>
-                                        <small>Mon 09 Dec 2024</small>
+                                        <small>Monday, Dec 09, 2024</small>
                                     </div>
                                 </div>
                             </div>
@@ -135,7 +152,6 @@ $categories = $stmt->fetchAll();
         </div>
     </div>
     <!-- Navbar End -->
-
 
     <!-- Modal Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
@@ -160,229 +176,12 @@ $categories = $stmt->fetchAll();
     </div>
     <!-- Modal Search End -->
 
-
-    <!-- Single Product Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-
-            <div class="row g-4">
-                <div class="col-lg-8">
-                    <div class="mb-4">
-                        <a href="#" class="h1 display-5">Tin tức mới nhất gần đây</a>
-                    </div>
-                    <div class="position-relative rounded overflow-hidden mb-3">
-                        <img src="../../public/img/news-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
-                        <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
-                        <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
-                        <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
-                    </div>
-                    <p class="my-4">NVIDIA, công ty dẫn đầu về công nghệ AI và đồ họa, công bố kế hoạch xây dựng một
-                        trung tâm
-                        nghiên cứu và phát triển (R&D) tại Việt Nam. Đây được xem là bước đi chiến lược, góp phần thúc
-                        đẩy
-                        sự phát triển công nghệ và mở rộng hệ sinh thái AI tại khu vực Đông Nam Á
-                    </p>
-                    <p class="my-4">
-                        NVIDIA công bố kế hoạch xây dựng trung tâm nghiên cứu và phát triển tại Việt Nam, mở ra cơ hội
-                        lớn cho ngành công nghệ trong nước và khu vực
-                    </p>
-                    <div class="bg-light p-4 mb-4 rounded border-start border-3 border-primary">
-                        <h1 class="mb-2">Những tin tức hay</h1>
-                    </div>
-                    <div class="row g-4">
-                        <div class="col-6">
-                            <div class="rounded overflow-hidden">
-                                <img src="../../public/img/news-6.jpg" class="img-zoomin img-fluid rounded w-100"
-                                    alt="">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="rounded overflow-hidden">
-                                <img src="../../public/img/news-5.jpg" class="img-zoomin img-fluid rounded w-100"
-                                    alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <p class="my-4">Tượng Nữ thần Tự do là món quà của nước Pháp tặng Hoa Kỳ, chính thức được khánh
-                        thành
-                        vào ngày 28/10/1886. Tác phẩm cao 93m này tượng trưng cho tự do và dân chủ, với ngọn đuốc giơ
-                        cao
-                        tay phải mang ý nghĩa soi sáng nhân loại, và những xiềng xích bị phá vỡ dưới chân thể hiện sự
-                        xóa bỏ nô lệ.
-                        Tượng được xây dựng tại Pháp, sau đó vận chuyển đến Mỹ qua đường biển​
-                    </p>
-                    <p class="my-4">Có một bức tượng đá nổi bật của Abraham Lincoln, thể hiện hình ảnh ông khi còn trẻ,
-                        cơ bắp và cởi trần.
-                        Tượng này, được gọi là "Young Lincoln," hiện đang thu hút sự chú ý từ cộng đồng mạng và trở nên
-                        viral.
-                        Tượng được tạo ra vào năm 1939 bởi nghệ sĩ James Hansen, người đã sử dụng chính mình làm mẫu cho
-                        hình ảnh này.
-                        Bức tượng cho thấy một Lincoln trẻ, đứng với dáng vẻ thư giãn, với quần áo được kéo xuống, như
-                        một mẫu hình thể thao.
-                        Điều này đã gây ra rất nhiều phản ứng hài hước và lời khen từ cư dân mạng, khiến bức tượng thu
-                        hút không ít sự chú ý, đặc biệt là từ các bình luận vui nhộn về ngoại hình "hấp dẫn" của ông
-                    </p>
-                    <div class="bg-light rounded my-4 p-4">
-                        <h4 class="mb-4">You Might Also Like</h4>
-                        <div class="row g-4">
-                            <div class="col-lg-6">
-                                <div class="d-flex align-items-center p-3 bg-white rounded">
-                                    <img src="../../public/img/chatGPT.jpg" class="img-fluid rounded" alt="">
-                                    <div class="ms-3">
-                                        <a href="https://topdev.vn/blog/chat-gpt-la-gi/" class="h5 mb-2">Ứng dụng của
-                                            chat gpt</a>
-                                        <p class="text-dark mt-3 mb-0 me-3"><i class="fa fa-clock"></i> 06 minute read
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex align-items-center p-3 bg-white rounded">
-                                    <img src="../../public/img/chatGPT-1.jpg" class="img-fluid rounded" alt="">
-                                    <div class="ms-3">
-                                        <a href="https://vi.wikipedia.org/wiki/Robot" class="h5 mb-2">Robot là gì ?</a>
-                                        <p class="text-dark mt-3 mb-0 me-3"><i class="fa fa-clock"></i> 06 minute read
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-light rounded p-4">
-                        <h4 class="mb-4">Comments</h4>
-                        <div class="p-4 bg-white rounded mb-4">
-                            <div class="row g-4">
-                                <div class="col-3">
-                                    <img src="../../public/img/footer-4.jpg" class="img-fluid rounded-circle w-100"
-                                        alt="">
-                                </div>
-                                <div class="col-9">
-                                    <div class="d-flex justify-content-between">
-                                        <h5>Minh Trung</h5>
-                                    </div>
-                                    <small class="text-body d-block mb-3"><i class="fas fa-calendar-alt me-1"></i> Dec
-                                        9, 2024</small>
-                                    <p class="mb-0">Tin tức thật hay!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="p-4 bg-white rounded mb-0">
-                            <div class="row g-4">
-                                <div class="col-3">
-                                    <img src="../../public/img/footer-4.jpg" class="img-fluid rounded-circle w-100"
-                                        alt="">
-                                </div>
-                                <div class="col-9">
-                                    <div class="d-flex justify-content-between">
-                                        <h5>Thanh Tú</h5>
-                                    </div>
-                                    <small class="text-body d-block mb-3"><i class="fas fa-calendar-alt me-1"></i> Dec
-                                        9, 2024</small>
-                                    <p class="mb-0">Thông tin hữu ích!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="row g-4">
-                        <div class="col-12">
-                            <div class="p-3 rounded border">
-                                <div class="input-group w-100 mx-auto d-flex mb-4">
-                                </div>
-                                <h4 class="mb-4">Popular Categories</h4>
-                                <?php foreach($categories as $n):?>
-                                <div class="row g-2">
-                                    <div class="col-12 mb-2">
-                                        <button
-                                            class="link-hover btn btn-light w-100 rounded text-uppercase text-dark py-3">
-                                            <a href="?category_id=<?php echo $n['id']; ?>"
-                                                class="text-dark text-decoration-none">
-                                                <p class="card-text"><?php echo $n['name']; ?></p>
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                                <?php endforeach; ?>
-                                <h4 class="my-4">News By Popular Categories</h4>
-                                <?php foreach($news as $n): ?>
-                                <div class="row g-4">
-                                    <div class="col-12">
-                                        <div class="row g-4 align-items-center features-item">
-                                            <div class="col-4 mb-2">
-                                                <div class="rounded-circle position-relative">
-                                                    <div class="overflow-hidden rounded-circle">
-                                                        <img src="../../public/img/<?php echo $n['image'];?>"
-                                                            class="img-zoomin img-fluid rounded-circle w-100" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="features-content d-flex flex-column">
-                                                    <p class="text-uppercase mb-2"><?php echo $n['title']; ?></p>
-                                                    <a href="detailPage.php?id=<?php echo $n['id']; ?>"
-                                                        class="h6"><?php echo $n['content']; ?></a>
-                                                    <small class="text-body d-block">
-                                                        <i class="fas fa-calendar-alt me-1"></i>
-                                                        <?php echo $n['created_at']; ?>
-                                                    </small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <?php endforeach; ?>
-
-                                <h4 class="my-4">Stay Connected</h4>
-                                <div class="row g-4">
-                                    <div class="col-12">
-                                        <a href="#"
-                                            class="w-100 rounded btn btn-primary d-flex align-items-center p-3 mb-2">
-                                            <i
-                                                class="fab fa-facebook-f btn btn-light btn-square rounded-circle me-3"></i>
-                                            <span class="text-white">13,977 Fans</span>
-                                        </a>
-                                        <a href="#"
-                                            class="w-100 rounded btn btn-danger d-flex align-items-center p-3 mb-2">
-                                            <i class="fab fa-twitter btn btn-light btn-square rounded-circle me-3"></i>
-                                            <span class="text-white">21,798 Follower</span>
-                                        </a>
-                                        <a href="#"
-                                            class="w-100 rounded btn btn-warning d-flex align-items-center p-3 mb-2">
-                                            <i class="fab fa-youtube btn btn-light btn-square rounded-circle me-3"></i>
-                                            <span class="text-white">7,999 Subscriber</span>
-                                        </a>
-                                        <a href="#"
-                                            class="w-100 rounded btn btn-dark d-flex align-items-center p-3 mb-2">
-                                            <i
-                                                class="fab fa-instagram btn btn-light btn-square rounded-circle me-3"></i>
-                                            <span class="text-white">19,764 Follower</span>
-                                        </a>
-                                        <a href="#"
-                                            class="w-100 rounded btn btn-secondary d-flex align-items-center p-3 mb-2">
-                                            <i class="bi-cloud btn btn-light btn-square rounded-circle me-3"></i>
-                                            <span class="text-white">31,999 Subscriber</span>
-                                        </a>
-                                        <a href="#"
-                                            class="w-100 rounded btn btn-warning d-flex align-items-center p-3 mb-4">
-                                            <i class="fab fa-dribbble btn btn-light btn-square rounded-circle me-3"></i>
-                                            <span class="text-white">37,999 Subscriber</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container mt-5">
+        <h2 class="mb-4 text-center"><?php echo $news['title']; ?></h2>
+        <img src="../../public/img/<?php echo $news['image']; ?>" alt="News Image"
+            class="img-fluid rounded mb-4 mx-auto d-block text-center">
+        <p><?php echo nl2br($news['content']); ?></p>
     </div>
-    <!-- Single Product End -->
 
 
     <!-- Footer Start -->
@@ -398,6 +197,8 @@ $categories = $stmt->fetchAll();
                     </div>
                     <div class="col-lg-9">
                         <div class="d-flex position-relative rounded-pill overflow-hidden">
+
+
                         </div>
                     </div>
                 </div>
@@ -406,11 +207,11 @@ $categories = $stmt->fetchAll();
                 <div class="col-lg-6 col-xl-3">
                     <div class="footer-item-1">
                         <h4 class="mb-4 text-white">Get In Touch</h4>
-                        <p class="text-secondary line-h">Address: <span class="text-white">175 Tay Son, Dong Da
-                                District, Hanoi</span>
+                        <p class="text-secondary line-h">Address: <span class="text-white">175 Tay Son, Dong Da, Ha
+                                Noi</span>
                         </p>
                         <p class="text-secondary line-h">Email: <span class="text-white">Example@gmail.com</span></p>
-                        <p class="text-secondary line-h">Phone: <span class="text-white">0987654321</span></p>
+                        <p class="text-secondary line-h">Phone: <span class="text-white">0123456789</span></p>
                         <div class="d-flex line-h">
                             <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i
                                     class="fab fa-twitter text-dark"></i></a>
@@ -423,7 +224,6 @@ $categories = $stmt->fetchAll();
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-6 col-xl-3">
                     <div class="d-flex flex-column text-start footer-item-3">
                         <h4 class="mb-4 text-white">Categories</h4>
@@ -511,8 +311,7 @@ $categories = $stmt->fetchAll();
     <script src="../../public/lib/waypoints/waypoints.min.js"></script>
     <script src="../../public/lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="../../public/js/app.js"></script>
+    <script src="../../public/js/main.js"></script>
 </body>
 
 </html>
