@@ -11,7 +11,20 @@
 
 ![Screenshot 2024-12-08 195140](https://github.com/user-attachments/assets/33db1d35-8d36-4728-b840-4bac2e40b445)
 
-![Screenshot 2024-12-08 195028](https://github.com/user-attachments/assets/533489c0-2428-407a-a254-53b31d13256c)
+-- Trang Detail Page
+![Screenshot_8-12-2024_233740_localhost](https://github.com/user-attachments/assets/dace05af-fe46-4e60-b065-4e7507a4abc2)
+
+-- Tìm kiếm
+![Screenshot_8-12-2024_233859_localhost](https://github.com/user-attachments/assets/6df5a766-bc35-4fcd-9165-3927861eb0a7)
+
+-- kết quả tìm kiếm
+![Screenshot_8-12-2024_233936_localhost](https://github.com/user-attachments/assets/c146c7eb-c661-4179-9b4e-f6a8f11d66b2)
+
+-- Chi tiết bài báo khi xem
+![Screenshot_8-12-2024_23401_localhost](https://github.com/user-attachments/assets/7b6338fe-127b-4c74-b8c1-d41499b35930)
+
+
+
 
 
 
