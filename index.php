@@ -18,6 +18,28 @@ if ($category_id) {
 $stmt = $pdo->query("SELECT * FROM categories");
 $categories = $stmt->fetchAll();
 
+// =======
+// require './core/Connection.php';
+
+// try {
+//     // Lấy kết nối từ class Connection
+//     $dbConnection = Connection::getInstance()->getConnection();
+
+//     // Truy vấn lấy dữ liệu
+//     $sql = "SELECT * FROM news";
+//     $stmt = $dbConnection->prepare($sql);
+//     $stmt->execute();
+
+//     // Lấy tất cả các bản ghi
+//     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+//     // Lấy 5 bài viết đầu tiên
+//     $articles = array_slice($results, 0, 5);
+// } catch (PDOException $e) {
+//     die("Database error: " . $e->getMessage());
+// }
+
+// >>>>>>> bd5f8a5a0f0fa0397132d45f9c312b019d8c7b44
 ?>
 
 <!DOCTYPE html>
