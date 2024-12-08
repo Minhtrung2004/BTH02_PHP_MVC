@@ -28,11 +28,14 @@ class LoginController {
                 $_SESSION['username'] = $user['username'];
                 $_SESSION['role'] = $user['role'];
 
-                // Chuyển hướng đến trang chính hoặc trang phân quyền
+                // Nếu người dùng là admin (role = 1), chuyển hướng đến trang admin
                 if ($user['role'] == 1) {
-                    header('Location: /admin/dashboard');
+                    header('Location: /admin/news/index.php');
+                    exit(); // Chấm dứt script sau khi chuyển hướng
                 } else {
+                    // Nếu là người dùng bình thường, chuyển hướng đến trang dashboard
                     header('Location: /user/dashboard');
+                    exit();
                 }
             } else {
                 // Đăng nhập thất bại, quay lại trang login với thông báo lỗi
