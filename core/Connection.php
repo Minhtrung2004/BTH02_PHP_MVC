@@ -7,10 +7,10 @@ class Connection
 
     private function __construct()
     {
-        $host = 'localhost';
+        $host = '127.0.0.1';
         $db = 'tintuc';
-        $user = 'root';
-        $pass = 'root';
+        $user = 'leduc';
+        $pass = 'password';
 
         try {
             $this->connection = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $pass);
