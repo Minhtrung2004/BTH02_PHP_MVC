@@ -1,27 +1,36 @@
 <?php
 require '../../../core/Connection.php';
-$sql = "SELECT * FROM news";
-$limit = 12;
 
-// Lấy trang hiện tại từ URL hoặc mặc định là 1
-$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-$offset = ($page - 1) * $limit;
+try {
+    // Lấy kết nối từ class Connection
+    $dbConnection = Connection::getInstance()->getConnection();
 
-// Lấy tổng số bản ghi từ cơ sở dữ liệu
-$total_sql = "SELECT COUNT(*) as total FROM news";
-$total_stmt = $conn->prepare($total_sql);
-$total_stmt->execute();
-$total_result = $total_stmt->fetch();
-$total_rows = $total_result['total'];
+    $sql = "SELECT * FROM news";
+    $limit = 12;
 
-// Lấy dữ liệu chỉ cho trang hiện tại
-$sql = "SELECT * FROM news LIMIT :limit OFFSET :offset";
-$stmt = $conn->prepare($sql);
-$stmt->bindParam(':limit', $limit, PDO::PARAM_INT);
-$stmt->bindParam(':offset', $offset, PDO::PARAM_INT);
-$stmt->execute();
-$results = $stmt->fetchAll();
+    // Lấy trang hiện tại từ URL hoặc mặc định là 1
+    $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+    $offset = ($page - 1) * $limit;
+
+    // Lấy tổng số bản ghi từ cơ sở dữ liệu
+    $total_sql = "SELECT COUNT(*) as total FROM news";
+    $total_stmt = $dbConnection->prepare($total_sql);
+    $total_stmt->execute();
+    $total_result = $total_stmt->fetch(PDO::FETCH_ASSOC);
+    $total_rows = $total_result['total'];
+
+    // Lấy dữ liệu chỉ cho trang hiện tại
+    $sql = "SELECT * FROM news LIMIT :limit OFFSET :offset";
+    $stmt = $dbConnection->prepare($sql);
+    $stmt->bindParam(':limit', $limit, PDO::PARAM_INT);
+    $stmt->bindParam(':offset', $offset, PDO::PARAM_INT);
+    $stmt->execute();
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    die("Database error: " . $e->getMessage());
+}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -93,7 +102,7 @@ $results = $stmt->fetchAll();
                                         <i class="material-icons">&#xE254;</i>
                                     </a>
                                     <!-- Nút Xóa -->
-                                    <a href="/Router/news-router.php?action=delete&id=<?php echo $result['id']; ?>" class="delete" title="Delete">
+                                    <a href="../../../Router/news-router.php?action=delete&id=<?php echo $result['id']; ?>" class="delete" title="Delete">
                                         <i class="material-icons">&#xE872;</i>
                                     </a>
                                 </td>

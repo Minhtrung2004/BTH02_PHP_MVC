@@ -1,10 +1,24 @@
 <?php
 require './core/Connection.php';
-$sql = "SELECT * FROM news";
-$stmt = $conn->prepare($sql);
-$stmt->execute();
-$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-$articles = array_slice($results, 0, 5);
+
+try {
+    // Lấy kết nối từ class Connection
+    $dbConnection = Connection::getInstance()->getConnection();
+
+    // Truy vấn lấy dữ liệu
+    $sql = "SELECT * FROM news";
+    $stmt = $dbConnection->prepare($sql);
+    $stmt->execute();
+
+    // Lấy tất cả các bản ghi
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    // Lấy 5 bài viết đầu tiên
+    $articles = array_slice($results, 0, 5);
+} catch (PDOException $e) {
+    die("Database error: " . $e->getMessage());
+}
+
 ?>
 
 <!DOCTYPE html>
