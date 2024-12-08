@@ -1,31 +1,55 @@
 <?php
-require_once __DIR__ . '/../../../core/Connection.php';
+require '../core/Connection.php';
+require '../views/admin/news/index.php';
 
 
 class NewsController
 {
     private $newsModel;
 
-    public function __construct($dbConnection)
+    public function __construct()
     {
+        $dbConnection = Connection::getInstance()->getConnection();
         $this->newsModel = new NewsModel($dbConnection);
     }
 
-    // Hàm xóa tin tức
-    public function delete($id)
+    public function index($page = 1, $limit = 12)
     {
-        if ($this->newsModel->deleteNews($id)) {
-            header('Location: /views/admin/news/index.php?status=success');
-        } else {
-            header('Location: /views/admin/news/index.php?status=error');
-        }
+        $offset = ($page - 1) * $limit;
+        $news = $this->newsModel->getAllNews($limit, $offset);
+        $total = $this->newsModel->getTotalNews();
+        include __DIR__ . '/../views/admin/news/index.php';
+    }
+
+    public function create()
+    {
+        include __DIR__ . '/../views/admin/news/create.php';
+    }
+
+    public function store($data)
+    {
+        $this->newsModel->createNews($data);
+        header('Location: /views/admin/news/index.php');
         exit;
     }
 
-    // Hàm hiển thị danh sách
-    public function index()
+    public function edit($id)
     {
-        $results = $this->newsModel->getAllNews();
-        require_once __DIR__ . '/../views/admin/news/index.php';
+        $news = $this->newsModel->getNewsById($id);
+        include __DIR__ . '/../views/admin/news/edit.php';
+    }
+
+    public function update($id, $data)
+    {
+        $this->newsModel->updateNews($id, $data);
+        header('Location: /views/admin/news/index.php');
+        exit;
+    }
+
+    public function delete($id)
+    {
+        $this->newsModel->deleteNews($id);
+        header('Location: /views/admin/news/index.php');
+        exit;
     }
 }
