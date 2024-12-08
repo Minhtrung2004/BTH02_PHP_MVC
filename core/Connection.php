@@ -33,16 +33,3 @@ class Connection
         return $this->connection;
     }
 }
-<<<<<<< HEAD
-
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "tintuc";
-
-
-$conn = connectionDatabase($severname, $username, $password, $dbname);
-$conn = null;
-?>
-=======
->>>>>>> bd5f8a5 (CRUD)
