@@ -22,7 +22,6 @@
                     <form action="login.php" method="POST">
                         <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                             <p class="lead fw-normal mb-0 me-3">Đăng nhập với</p>
-                            <!-- Add Social media buttons here if needed -->
                         </div>
 
                         <div class="divider d-flex align-items-center my-4">
