@@ -20,7 +20,7 @@ $dbname = "tintuc";
 
 ?>
 
-
+<?php
 // class Connection
 // {
 // private static $instance = null;
@@ -55,3 +55,4 @@ $dbname = "tintuc";
 // }
 // }
 // >>>>>>> bd5f8a5a0f0fa0397132d45f9c312b019d8c7b44
+?>
