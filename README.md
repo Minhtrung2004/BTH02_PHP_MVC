@@ -4,7 +4,9 @@
 
 •	Ngô Minh Trung, Đoàn Thanh Tú: Xây dựng giao diện website (HTML, CSS), Xây dựng chức năng quản lý tin tức (thêm, sửa, xóa) cho quản trị viên. 
 
-![Screenshot_8-12-2024_19598_localhost](https://github.com/user-attachments/assets/6802d5c2-ee53-4c83-87e9-f7de10ce873d)
+-- Trang home
+![Screenshot_8-12-2024_234927_localhost](https://github.com/user-attachments/assets/ca44321c-b574-4712-9800-49622ef43a67)
+
 
 
 ![Screenshot 2024-12-08 201146](https://github.com/user-attachments/assets/4e52f6e0-5554-490b-abed-68157368a0d3)
