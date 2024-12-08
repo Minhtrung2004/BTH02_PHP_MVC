@@ -7,7 +7,7 @@ class User {
 
     public function __construct() {
         // Kết nối với database
-        $this->db = new PDO('mysql:host=localhost;dbname=tintuc', 'leduc', 'password'); // Cập nhật với thông tin DB của bạn
+        $this->db = new PDO('mysql:host=localhost;dbname=tintuc', 'root', ''); // Cập nhật với thông tin DB của bạn
     }
 
     // Lấy thông tin người dùng theo username
