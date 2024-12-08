@@ -10,8 +10,11 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="d-flex position-relative rounded-pill overflow-hidden">
-                        <input class="form-control border-0 w-100 py-3 rounded-pill" type="email" placeholder="example@gmail.com">
-                        <button type="submit" class="btn btn-primary border-0 py-3 px-5 rounded-pill text-white position-absolute" style="top: 0; right: 0;">Subscribe Now</button>
+                        <input class="form-control border-0 w-100 py-3 rounded-pill" type="email"
+                            placeholder="example@gmail.com">
+                        <button type="submit"
+                            class="btn btn-primary border-0 py-3 px-5 rounded-pill text-white position-absolute"
+                            style="top: 0; right: 0;">Subscribe Now</button>
                     </div>
                 </div>
             </div>
@@ -24,10 +27,14 @@
                     <p class="text-secondary line-h">Email: <span class="text-white">Example@gmail.com</span></p>
                     <p class="text-secondary line-h">Phone: <span class="text-white">+0123 4567 8910</span></p>
                     <div class="d-flex line-h">
-                        <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter text-dark"></i></a>
-                        <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f text-dark"></i></a>
-                        <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube text-dark"></i></a>
-                        <a class="btn btn-light btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in text-dark"></i></a>
+                        <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i
+                                class="fab fa-twitter text-dark"></i></a>
+                        <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i
+                                class="fab fa-facebook-f text-dark"></i></a>
+                        <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i
+                                class="fab fa-youtube text-dark"></i></a>
+                        <a class="btn btn-light btn-md-square rounded-circle" href=""><i
+                                class="fab fa-linkedin-in text-dark"></i></a>
                     </div>
                 </div>
             </div>
@@ -37,14 +44,16 @@
                         <h4 class="mb-4 text-white">Recent Posts</h4>
                         <a href="#">
                             <div class="d-flex align-items-center">
-                                <img src="./public/img/footer-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                <img src="./public/img/footer-1.jpg" class="img-zoomin img-fluid rounded-circle w-100"
+                                    alt="">
                             </div>
                             <div class="d-flex flex-column ps-4">
                                 <p class="text-uppercase text-white mb-3">Life Style</p>
                                 <a href="#" class="h6 text-white">
                                     Get the best speak market, news.
                                 </a>
-                                <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                    2024</small>
                             </div>
                     </div>
                     </a>
@@ -53,14 +62,16 @@
                     <a href="#">
                         <div class="d-flex align-items-center">
                             <div class="rounded-circle border border-2 border-primary overflow-hidden">
-                                <img src="./public/img/footer-2.jpg" class="img-zoominimg-fluid rounded-circle w-100" alt="">
+                                <img src="./public/img/footer-2.jpg" class="img-zoominimg-fluid rounded-circle w-100"
+                                    alt="">
                             </div>
                             <div class="d-flex flex-column ps-4">
                                 <p class="text-uppercase text-white mb-3">Sports</p>
                                 <a href="#" class="h6 text-white">
                                     Get the best speak market, news.
                                 </a>
-                                <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                    2024</small>
                             </div>
                         </div>
                     </a>
@@ -75,7 +86,8 @@
                 <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Lifestyle</a>
                 <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Politician</a>
                 <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Technology</a>
-                <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Intertainment</a>
+                <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
+                    Intertainment</a>
             </div>
         </div>
         <div class="col-lg-6 col-xl-3">
