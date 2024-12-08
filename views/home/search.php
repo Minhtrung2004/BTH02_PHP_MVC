@@ -1,46 +1,40 @@
 <?php
-require_once('../../core/connection.php');
+require_once('C:/xampp/htdocs/BTH02_PHP_MVC/core/Connection.php');
 
-// Lấy kết nối từ hàm connectionDatabase
-$conn = connectionDatabase($servername, $username, $password, $dbname);
+// Nhận từ khóa tìm kiếm
+$keyword = isset($_GET['keyword']) ? $_GET['keyword'] : null;
 
-if (isset($_GET['id'])) {
-    $news_id = $_GET['id'];
+// Kết nối cơ sở dữ liệu bằng PDO
+$pdo = connectionDatabase($servername, $username, $password, $dbname);
 
-    // Truy vấn bài báo dựa trên id sử dụng PDO
-    $query = "SELECT * FROM news WHERE id = :id";
-    $stmt = $conn->prepare($query);
-    $stmt->bindParam(':id', $news_id, PDO::PARAM_INT);
+
+// Nếu có từ khóa tìm kiếm
+if ($keyword) {
+    // Truy vấn tìm kiếm
+    $stmt = $pdo->prepare("
+        SELECT news.id, news.title, news.content, news.image, news.created_at, categories.name AS category_name
+        FROM news
+        INNER JOIN categories ON news.category_id = categories.id
+        WHERE news.title LIKE :keyword OR news.content LIKE :keyword
+        ORDER BY news.created_at DESC
+    ");
+    $searchKeyword = '%' . $keyword . '%';
+    $stmt->bindParam(':keyword', $searchKeyword, PDO::PARAM_STR);
     $stmt->execute();
-
-    // Kiểm tra nếu bài báo tồn tại
-    if ($stmt->rowCount() > 0) {
-        $news = $stmt->fetch(PDO::FETCH_ASSOC);
-    } else {
-        echo "Bài báo không tồn tại.";
-        exit;
-    }
+    $news = $stmt->fetchAll();
 } else {
-    echo "Không tìm thấy bài báo.";
-    exit;
+    $news = [];
 }
 
-// Lấy danh sách categories
-try {
-    $stmt = $conn->query("SELECT * FROM categories");
-    $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
-} catch (PDOException $e) {
-    echo "Lỗi khi lấy danh sách danh mục: " . htmlspecialchars($e->getMessage());
-    $categories = [];
-}
+$stmt = $pdo->query("SELECT * FROM categories");
+$categories = $stmt->fetchAll();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Chi tiết bài báo</title>
+    <title>Kết quả tìm kiếm</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -83,16 +77,9 @@ try {
                         </div>
                         <div class="overflow-hidden" style="width: 735px;">
                             <div id="note" class="ps-2">
-                                <img src="../../public/img/features-fashion.jpg"
-                                    class="img-fluid rounded-circle border border-3 border-primary me-2"
-                                    style="width: 30px; height: 30px;" alt="">
-
-                                <img src="../../public/img/features-sports-1.jpg"
-                                    class="img-fluid rounded-circle border border-3 border-primary me-2"
-                                    style="width: 30px; height: 30px;" alt="">
-
                                 <a href="#">
-                                    <p class="text-white mb-0 link-hover">Cải Cách Giáo Dục: Tương Lai Và Thách Thức</p>
+                                    <p class="text-white mb-0 link-hover">Vì Một Việt Nam Sạch, Xanh: Chúng Ta Đã Làm
+                                        Gì?</p>
                                 </a>
                             </div>
                         </div>
@@ -174,14 +161,36 @@ try {
             </div>
         </div>
     </div>
-    <!-- Modal Search End -->
 
     <div class="container mt-5">
-        <h2 class="mb-4 text-center"><?php echo $news['title']; ?></h2>
-        <img src="../../public/img/<?php echo $news['image']; ?>" alt="News Image"
-            class="img-fluid rounded mb-4 mx-auto d-block text-center">
-        <p><?php echo nl2br($news['content']); ?></p>
+        <h1 class="text-center" style="color: rgb(84, 103, 173);">
+            Kết quả tìm kiếm cho từ khóa: "<?php echo htmlspecialchars($_GET['keyword']); ?>"
+        </h1>
+        <?php if (!empty($news)): ?>
+        <div class="row">
+            <?php foreach ($news as $row): ?>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <!-- Sử dụng h-100 để card chiếm hết chiều cao của col -->
+                    <img src="../../public/img/<?php echo htmlspecialchars($row['image']); ?>" class="card-img-top"
+                        alt="<?php echo htmlspecialchars($row['title']); ?>">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><?php echo htmlspecialchars($row['title']); ?></h5>
+                        <p class="card-text"><?php echo substr(htmlspecialchars($row['content']), 0, 100); ?>...</p>
+                        <p class="card-text"><small class="text-muted">Danh mục:
+                                <?php echo htmlspecialchars($row['category_name']); ?></small></p>
+                        <a href="detailPage.php?id=<?php echo $row['id']; ?>" class="btn btn-primary mt-auto">Đọc
+                            thêm</a> <!-- Sử dụng mt-auto để đẩy nút "Đọc thêm" xuống dưới cùng -->
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+        <?php else: ?>
+        <p>Không tìm thấy kết quả nào.</p>
+        <?php endif; ?>
     </div>
+
 
 
     <!-- Footer Start -->

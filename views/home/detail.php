@@ -28,7 +28,7 @@ $categories = $stmt->fetchAll();
 
 <head>
     <meta charset="utf-8">
-    <title>Newsers - Free HTML Magazine Template</title>
+    <title>Detail Page </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -75,15 +75,14 @@ $categories = $stmt->fetchAll();
                                     class="img-fluid rounded-circle border border-3 border-primary me-2"
                                     style="width: 30px; height: 30px;" alt="">
                                 <a href="#">
-                                    <p class="text-white mb-0 link-hover">Newsan unknown printer took a galley of type
-                                        andscrambled Newsan.</p>
+                                    <p class="text-white mb-0 link-hover">Giải Mã Cuộc Cách Mạng Công Nghệ 4.0</p>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="top-link flex-lg-wrap">
                         <i class="fas fa-calendar-alt text-white border-end border-secondary pe-2 me-2"> <span
-                                class="text-body">Tuesday, Sep 12, 2024</span></i>
+                                class="text-body">Monday, Dec 09, 2024</span></i>
                         <div class="d-flex icon">
                             <p class="mb-0 text-white me-2">Follow Us:</p>
                             <a href="" class="me-2"><i class="fab fa-facebook-f text-body link-hover"></i></a>
@@ -118,10 +117,10 @@ $categories = $stmt->fetchAll();
                             <div class="d-flex">
                                 <img src="../../public/img/weather-icon.png" class="img-fluid w-100 me-2" alt="">
                                 <div class="d-flex align-items-center">
-                                    <strong class="fs-4 text-secondary">31°C</strong>
+                                    <strong class="fs-4 text-secondary">25°C</strong>
                                     <div class="d-flex flex-column ms-2" style="width: 150px;">
-                                        <span class="text-body">NEW YORK,</span>
-                                        <small>Mon. 10 jun 2024</small>
+                                        <span class="text-body">Ha Noi,</span>
+                                        <small>Mon 09 Dec 2024</small>
                                     </div>
                                 </div>
                             </div>
@@ -139,19 +138,22 @@ $categories = $stmt->fetchAll();
 
 
     <!-- Modal Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content rounded-0">
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <h5 class="modal-title" id="searchModalLabel">Tìm kiếm</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body d-flex align-items-center">
-                    <div class="input-group w-75 mx-auto d-flex">
-                        <input type="search" class="form-control p-3" placeholder="keywords"
-                            aria-describedby="search-icon-1">
-                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                    </div>
+                <div class="modal-body">
+                    <!-- Form gửi từ khóa tìm kiếm -->
+                    <form action="../home/search.php" method="GET">
+                        <input type="text" name="keyword" class="form-control" placeholder="Nhập từ khóa tìm kiếm..."
+                            required>
+                        <div class="mt-3">
+                            <button type="submit" class="btn btn-primary w-100">Tìm kiếm</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
